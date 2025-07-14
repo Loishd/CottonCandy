@@ -16,16 +16,18 @@ public class AreaInteraction : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        if (canInteract == true && Input.GetKeyDown(KeyCode.E))
+        if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
             Debug.Log("E pressed");
+            DialogueSystem.instance.StartDialogue();
+
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //if player in this area can interact
     {
         if (collision.CompareTag("Player"))
         {
@@ -34,7 +36,7 @@ public class AreaInteraction : MonoBehaviour
        
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) //if player in this area cannot interact
     {
         if (collision.CompareTag("Player"))
         {
