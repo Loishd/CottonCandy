@@ -15,7 +15,7 @@ public class DialogueSystem : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
-
+    
     private int index;
 
 
@@ -36,22 +36,22 @@ public class DialogueSystem : MonoBehaviour
         textComponent.text = string.Empty;
         //StartDialogue();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (textComponent.text == lines[index])     
+                if (Input.GetMouseButtonDown(0))
             {
-                NextLine();
+                if (textComponent.text == lines[index])     
+                {
+                    NextLine();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    textComponent.text = lines[index];
+                }
             }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
-        }
     }
 
     public void StartDialogue()

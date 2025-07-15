@@ -43,6 +43,8 @@ public class AreaInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
+            DialogueSystem.Instance.gameObject.SetActive(false);
+            DialogueSystem.Instance.textComponent.text = string.Empty;
         }
         
     }
