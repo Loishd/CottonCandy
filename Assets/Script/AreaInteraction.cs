@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AreaInteraction : MonoBehaviour
 {
-
+    public DialogueSystem dialogue;
     
 
     private Rigidbody2D rb;
@@ -22,8 +22,10 @@ public class AreaInteraction : MonoBehaviour
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
             Debug.Log("E pressed");
-            DialogueSystem.instance.StartDialogue();
-
+            DialogueSystem.Instance.textComponent.text = string.Empty;
+            DialogueSystem.Instance.gameObject.SetActive(true);
+            DialogueSystem.Instance.StartDialogue();
+            
         }
     }
 

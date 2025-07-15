@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        DialogueSystem.Instance.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

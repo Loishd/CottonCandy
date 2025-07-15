@@ -9,7 +9,7 @@ using UnityEditorInternal;
 public class DialogueSystem : MonoBehaviour
 {
     private static DialogueSystem _instance;
-    public static DialogueSystem instance => _instance;
+    public static DialogueSystem Instance { get { return _instance; } }
 
 
     public TextMeshProUGUI textComponent;
@@ -21,7 +21,14 @@ public class DialogueSystem : MonoBehaviour
 
     private void Awake()
     {
-        _instance = this;
+        if(_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
     }
 
     void Start()
