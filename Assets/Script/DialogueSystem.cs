@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditorInternal;
+using JetBrains.Annotations;
 
 
 
@@ -15,6 +16,7 @@ public class DialogueSystem : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public bool isDialogue = false;
     
     private int index;
 
@@ -58,6 +60,8 @@ public class DialogueSystem : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
+        isDialogue = true;
+
     }
 
     private IEnumerator TypeLine()
@@ -80,6 +84,7 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            isDialogue = false;
         }
     }
 }

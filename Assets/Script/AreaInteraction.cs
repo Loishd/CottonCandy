@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AreaInteraction : MonoBehaviour
 {
-    public DialogueSystem dialogue;
+    
     
 
     private Rigidbody2D rb;
@@ -21,10 +21,12 @@ public class AreaInteraction : MonoBehaviour
     {
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            Debug.Log("E pressed");
-            DialogueSystem.Instance.textComponent.text = string.Empty;
-            DialogueSystem.Instance.gameObject.SetActive(true);
-            DialogueSystem.Instance.StartDialogue();
+            if (DialogueSystem.Instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+            {
+                DialogueSystem.Instance.textComponent.text = string.Empty; //reset dialogue
+                DialogueSystem.Instance.gameObject.SetActive(true); //show dialogue
+                DialogueSystem.Instance.StartDialogue(); //run the dialogue
+            }
             
         }
     }
@@ -43,8 +45,9 @@ public class AreaInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
-            DialogueSystem.Instance.gameObject.SetActive(false);
+            DialogueSystem.Instance.gameObject.SetActive(false); //same as void upd
             DialogueSystem.Instance.textComponent.text = string.Empty;
+            DialogueSystem.Instance.isDialogue = false;
         }
         
     }

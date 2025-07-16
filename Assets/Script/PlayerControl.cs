@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public float speed = 5f;
-    public float xlimit = 20;
-    public float ylimit = 20;
+    public float xlimit = 14.5f;
+    public float ylimit = 11f;
 
     private Rigidbody2D rb;
 
