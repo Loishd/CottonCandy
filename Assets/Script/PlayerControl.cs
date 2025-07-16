@@ -26,26 +26,8 @@ public class PlayerControl : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         Vector2 input = new Vector2(horizontalInput, verticalInput).normalized;
-        transform.position = new Vector2(transform.position.x + (horizontalInput * speed * Time.deltaTime), transform.position.y + (verticalInput * speed * Time.deltaTime));
+        rb.MovePosition(rb.position + input * speed * Time.fixedDeltaTime);
 
-        if (transform.position.x > xlimit)
-        {
-            transform.position = new Vector3(xlimit, transform.position.y, 0f);
-        }
-
-        else if (transform.position.x < -xlimit)
-        {
-            transform.position = new Vector3(-xlimit, transform.position.y, 0f);
-        }
-
-        if (transform.position.y > ylimit)
-        {
-            transform.position = new Vector3(transform.position.x, ylimit, 0f);
-        }
-
-        else if (transform.position.y < -ylimit)
-        {
-            transform.position = new Vector3(transform.position.x, -ylimit, 0f);
-        }
+        
     }
 }
