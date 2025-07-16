@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AreaInteraction : MonoBehaviour
 {
-    
-    
-
+    private static AreaInteraction _instance;
+    public static AreaInteraction Instance { get { return _instance; } }
     private Rigidbody2D rb;
-    public bool canInteract = false; 
+    public bool canInteract = false;
+    public GameObject NPCPanel;
 
+    private void Awake()
+    {
+            _instance = this;
+        
+    }
 
     void Start()
     {
@@ -24,7 +31,7 @@ public class AreaInteraction : MonoBehaviour
             if (DialogueSystem.Instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
             {
                 DialogueSystem.Instance.textComponent.text = string.Empty; //reset dialogue
-                DialogueSystem.Instance.gameObject.SetActive(true); //show dialogue
+                NPCPanel.SetActive(true); //show dialogue
                 DialogueSystem.Instance.StartDialogue(); //run the dialogue
             }
             
@@ -45,7 +52,7 @@ public class AreaInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
-            DialogueSystem.Instance.gameObject.SetActive(false); //same as void upd
+            NPCPanel.SetActive(false); //same as void upd
             DialogueSystem.Instance.textComponent.text = string.Empty;
             DialogueSystem.Instance.isDialogue = false;
         }

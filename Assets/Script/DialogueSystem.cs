@@ -12,10 +12,11 @@ public class DialogueSystem : MonoBehaviour
     private static DialogueSystem _instance;
     public static DialogueSystem Instance { get { return _instance; } }
 
-
+    
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    
     public bool isDialogue = false;
     
     private int index;
@@ -23,14 +24,9 @@ public class DialogueSystem : MonoBehaviour
 
     private void Awake()
     {
-        if(_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
+        
             _instance = this;
-        }
+        
     }
 
     void Start()
@@ -83,7 +79,7 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            AreaInteraction.Instance.NPCPanel.SetActive(false);
             isDialogue = false;
         }
     }

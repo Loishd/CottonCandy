@@ -10,7 +10,7 @@ public class Gallery : MonoBehaviour
 
     public bool Gallery_Lock;
     public int Gallery_Index;
-    public  ;
+      
     public bool clickedAble = false;
     void Start()
     {
@@ -23,10 +23,7 @@ public class Gallery : MonoBehaviour
     void Update()
     {
         
-        if (Gallery_Lock == false)
-        {
-            print("False");   
-        }
+        
     }
     IEnumerator DelayExample()
     {
@@ -53,10 +50,10 @@ public class Gallery : MonoBehaviour
     }
     void UpdateButtonLabel()
     {
-        Text btnText = toggleButton.GetComponentInChildren<Text>();
-        if (btnText != null)
+        //Text btnText = btnText.GetComponentInChildren<Text>();
+        //if (btnText != null)
         {
-            btnText.text = Gallery_Lock ? "Lock" : "Unlock";
+            //btnText.text = Gallery_Lock ? "Lock" : "Unlock";
         }
     }
 
