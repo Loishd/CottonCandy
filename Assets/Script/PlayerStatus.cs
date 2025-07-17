@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
+    public bool isDialogue;
     public bool pickupitemstatus;
     public int progressvalue;
     void Start()
@@ -18,5 +19,14 @@ public class PlayerStatus : MonoBehaviour
         
     }
 
-    
+    /*if (isDialogue == true)
+        {
+            PlayerControl.Instance.speed = 0;
+
+        }
+        else if (isDialogue == false)
+        {
+            PlayerControl.Instance.speed = 5;
+            Debug.Log("Set Speed to Normal");
+        }*/
 }

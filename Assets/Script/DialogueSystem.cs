@@ -9,15 +9,14 @@ using JetBrains.Annotations;
 
 public class DialogueSystem : MonoBehaviour
 {
-    private static DialogueSystem _instance;
-    public static DialogueSystem Instance { get { return _instance; } }
-
     
+    public PlayerStatus isdial;
+    public AreaInteraction Area;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
     
-    public bool isDialogue = false;
+    
     
     private int index;
 
@@ -25,29 +24,17 @@ public class DialogueSystem : MonoBehaviour
     private void Awake()
     {
         
-            _instance = this;
-        
     }
 
     void Start()
     {
         textComponent.text = string.Empty;
-        //StartDialogue();
     }
     
     // Update is called once per frame
     void Update()
     {
-        /*if (isDialogue == true)
-        {
-            PlayerControl.Instance.speed = 0;
-
-        }
-        else if (isDialogue == false)
-        {
-            PlayerControl.Instance.speed = 5;
-            Debug.Log("Set Speed to Normal");
-        }*/
+        
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -67,7 +54,7 @@ public class DialogueSystem : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
-        isDialogue = true;
+        
 
     }
 
@@ -90,8 +77,8 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            AreaInteraction.Instance.NPCPanel.SetActive(false);
-            isDialogue = false;
+            Area.NPCPanel.SetActive(false);
+            isdial.isDialogue = false;
         }
     }
 }

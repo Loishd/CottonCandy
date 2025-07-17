@@ -7,20 +7,22 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AreaInteraction : MonoBehaviour
 {
-    private static AreaInteraction _instance;
-    public static AreaInteraction Instance { get { return _instance; } }
+    public PlayerStatus isdial;
+    public DialogueSystem dialogue;
+    public GameObject NPCPanel;
     private Rigidbody2D rb;
     public bool canInteract = false;
-    public GameObject NPCPanel;
+    
 
     private void Awake()
     {
-            _instance = this;
+            
         
     }
 
     void Start()
     {
+        
     }
 
     
@@ -32,11 +34,12 @@ public class AreaInteraction : MonoBehaviour
 
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (DialogueSystem.Instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+            if (isdial.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
             {
-                DialogueSystem.Instance.textComponent.text = string.Empty; //reset dialogue
+                dialogue.textComponent.text = string.Empty; //reset dialogue
                 NPCPanel.SetActive(true); //show dialogue
-                DialogueSystem.Instance.StartDialogue(); //run the dialogue
+                dialogue.StartDialogue(); //run the dialogue
+                isdial.isDialogue = true;
             }
             
         }
@@ -57,8 +60,8 @@ public class AreaInteraction : MonoBehaviour
         {
             canInteract = false;
             NPCPanel.SetActive(false); //same as void upd
-            DialogueSystem.Instance.textComponent.text = string.Empty;
-            DialogueSystem.Instance.isDialogue = false;
+            dialogue.textComponent.text = string.Empty;
+            isdial.isDialogue = false;
         }
         
     }

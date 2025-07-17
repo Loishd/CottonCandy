@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    private static PlayerControl _instance;
-    public static PlayerControl Instance { get { return _instance; } }
 
     public float speed = 5f;
     public float xlimit = 14.5f;
@@ -16,7 +14,7 @@ public class PlayerControl : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        _instance = this;
+        
     }
     void Start()
     {

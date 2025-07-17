@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEditorInternal;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
+
     
 
     private static GameManager _instance;
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        AreaInteraction.Instance.NPCPanel.SetActive(false);
+
     }
 
     // Update is called once per frame

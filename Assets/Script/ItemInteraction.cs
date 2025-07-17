@@ -50,7 +50,7 @@ public class ItemInteraction : MonoBehaviour
                 }
                 itemType.SetActive(false);
                 itemPicker.pickupitemstatus = true;
-                itemprogress.progressvalue += ItemValue;
+                itemprogresser.progressvalue += ItemValue;
             }
 
         }
