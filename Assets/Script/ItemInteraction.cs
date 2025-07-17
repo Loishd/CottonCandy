@@ -4,43 +4,56 @@ using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour
 {
+    public int iteminter { get; private set; }
+
+    public PlayerStatus itemPicker;
+    public PlayerStatus itemprogresser;
     public GameObject itemType;
     private Rigidbody2D rb;
     public bool canInteractItem = false;
+    public int ItemValue;
     
-    public int Value;
     
+    private void Awake()
+    {
+        
+    }
 
     void Start()
     {
+        
         itemType.SetActive(true);
+        
+        
     }
 
 
     void Update()
     {
-            if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
-            { 
-                if (ItemChecker.Instance.pickedUpItem == false) {
+        
+        if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
+        {
+            
+            if (itemPicker.pickupitemstatus == false)
+            {
+                if (ItemValue == 10)
                 {
-                    itemType.SetActive(false);
-
-                    if (Value == 10)
-                    {
-                        Debug.Log("Good Item!!");
-                    }
-                    else if (Value == 1)
-                    {
-                        Debug.Log("Bad Item");
-                    }
-                    else
-                    {
-                        Debug.Log("Neutral");
-                    }
-                    ItemChecker.Instance.pickedUpItem = true;
+                    Debug.Log("GoodItem");
                 }
+                else if (ItemValue == 1)
+                {
+                    Debug.Log("BadItem");
+                }
+                else
+                {
+                    Debug.Log("Neutral");
+                }
+                itemType.SetActive(false);
+                itemPicker.pickupitemstatus = true;
+                itemprogress.progressvalue += ItemValue;
             }
-        }   
+
+        }
 
     }
 
@@ -49,8 +62,10 @@ public class ItemInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteractItem = true;
+            
         }
 
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision) //if player in this area cannot interact
@@ -63,12 +78,10 @@ public class ItemInteraction : MonoBehaviour
 
     }
 
-    private void GainValue(int GoodieValue)
-    {
-        Value = gameObject.GetComponent<ItemChecker>().ItemValue;
-    }
-
-
 
 }
+
+
+
+
 

@@ -38,18 +38,29 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                if (Input.GetMouseButtonDown(0))
+        /*if (isDialogue == true)
+        {
+            PlayerControl.Instance.speed = 0;
+
+        }
+        else if (isDialogue == false)
+        {
+            PlayerControl.Instance.speed = 5;
+            Debug.Log("Set Speed to Normal");
+        }*/
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (textComponent.text == lines[index])
             {
-                if (textComponent.text == lines[index])     
-                {
-                    NextLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    textComponent.text = lines[index];
-                }
+                NextLine();
             }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+        }
     }
 
     public void StartDialogue()

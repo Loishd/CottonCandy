@@ -26,6 +26,10 @@ public class AreaInteraction : MonoBehaviour
     
     void Update()
     {
+        
+
+
+
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
             if (DialogueSystem.Instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
