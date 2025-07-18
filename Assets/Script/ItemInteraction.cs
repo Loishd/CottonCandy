@@ -38,11 +38,13 @@ public class ItemInteraction : MonoBehaviour
             {
                 if (ItemValue == 10)
                 {
-                    Debug.Log("GoodItem");
+                    Debug.Log("Got Axe!");
+                    itemprogresser.HaveAxe = true;
                 }
                 else if (ItemValue == 1)
                 {
-                    Debug.Log("BadItem");
+                    Debug.Log("Got Needle!");
+                    itemprogresser.HaveNeedle = true;
                 }
                 else
                 {
@@ -50,7 +52,6 @@ public class ItemInteraction : MonoBehaviour
                 }
                 itemType.SetActive(false);
                 itemPicker.pickupitemstatus = true;
-                itemprogresser.progressvalue += ItemValue;
             }
 
         }

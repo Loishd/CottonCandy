@@ -6,11 +6,13 @@ public class PlayerStatus : MonoBehaviour
 {
     public bool isDialogue;
     public bool pickupitemstatus;
-    public int progressvalue;
+    public bool HaveAxe;
+    public bool HaveNeedle;
     void Start()
     {
         pickupitemstatus = false;
-        progressvalue = 0;
+        HaveAxe = false;
+        HaveNeedle = false;
     }
 
     
