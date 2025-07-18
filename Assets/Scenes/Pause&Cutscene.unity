@@ -868,6 +868,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d640c93306504274bb70569c76672aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicSource: {fileID: 0}
+  SFXSource: {fileID: 0}
+  background: {fileID: 0}
   _pausedScreen: {fileID: 0}
 --- !u!4 &1652502249
 Transform:
