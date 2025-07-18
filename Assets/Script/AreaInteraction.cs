@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
@@ -34,14 +35,20 @@ public class AreaInteraction : MonoBehaviour
 
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (isdial.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+            if (isdial.HaveAxe == true)
             {
-                dialogue.textComponent.text = string.Empty; //reset dialogue
-                NPCPanel.SetActive(true); //show dialogue
-                dialogue.StartDialogue(); //run the dialogue
-                isdial.isDialogue = true;
+                Debug.Log("Go To Cutscene");
             }
-            
+            else
+            {
+                if (isdial.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                {
+                    dialogue.textComponent.text = string.Empty; //reset dialogue
+                    NPCPanel.SetActive(true); //show dialogue
+                    dialogue.StartDialogue(); //run the dialogue
+                    isdial.isDialogue = true;
+                }
+            }
         }
     }
 
