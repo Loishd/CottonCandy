@@ -15,20 +15,35 @@ public class DialogueSystem : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip dialogueTypingSoundClip; [Range(1, 5)]
+    [SerializeField] private int frequencyLevel = 1;
+    [SerializeField] private bool StopAudioSource;
     
-    
-    
+
+
+
+
     private int index;
+    private void playDialogueSound(int currentDisplayedChraracterCount)
+    {
+        if (currentDisplayedChraracterCount % frequencyLevel == 0)
+        {
+            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            print("a"+currentDisplayedChraracterCount);
+        }
+    }
 
 
     private void Awake()
     {
-        
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+        /*textComponent.text = string.Empty;*/
     }
-
+    
     void Start()
     {
-        textComponent.text = string.Empty;
+        
     }
     
     // Update is called once per frame
@@ -60,9 +75,17 @@ public class DialogueSystem : MonoBehaviour
 
     private IEnumerator TypeLine()
     {
+        
         foreach (char c in lines[index].ToCharArray())
         {
+            int characterCount = 0;
             textComponent.text += c;
+            if (!char.IsWhiteSpace(c) && char.IsLetterOrDigit(c))
+            {
+                characterCount++;
+                playDialogueSound(c);
+            }
+
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -71,6 +94,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (index < lines.Length - 1)
         {
+            
             index++;
             textComponent.text = string.Empty;
             StartCoroutine (TypeLine());

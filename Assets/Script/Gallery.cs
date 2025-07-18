@@ -48,6 +48,7 @@ public class Gallery : MonoBehaviour
         Debug.Log("Gallery_Lock = " + Gallery_Lock);
         UpdateButtonLabel(); 
     }
+    
     void UpdateButtonLabel()
     {
         //Text btnText = btnText.GetComponentInChildren<Text>();

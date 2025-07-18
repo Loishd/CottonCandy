@@ -2566,7 +2566,10 @@ MonoBehaviour:
   lines:
   - Hello There... zzz...
   - Im Lamp...
-  textSpeed: 0.1
+  textSpeed: 0.05
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 48ad94305a8d278459b525936ea978d3, type: 3}
+  frequencyLevel: 1
+  StopAudioSource: 0
 --- !u!114 &834811164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4012,6 +4015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d640c93306504274bb70569c76672aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicSource: {fileID: 0}
+  SFXSource: {fileID: 0}
+  background: {fileID: 0}
   _pausedScreen: {fileID: 0}
 --- !u!4 &1353955210
 Transform:
@@ -4656,9 +4662,14 @@ MonoBehaviour:
   Area: {fileID: 920479938}
   textComponent: {fileID: 69563958}
   lines:
-  - Hi!!!
-  - Im B!!!
-  textSpeed: 0.1
+  - ABCDEFG
+  - 1 2 3 4 5 6 7 8 9
+  - MINECRAFT !DDDDD   !!!!!  D D D dd DD DD
+  - ROBLOX
+  textSpeed: 0.075
+  dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
+  frequencyLevel: 2
+  StopAudioSource: 1
 --- !u!1 &1555880652
 GameObject:
   m_ObjectHideFlags: 0
