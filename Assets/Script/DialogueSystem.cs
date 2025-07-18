@@ -3,39 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditorInternal;
+using JetBrains.Annotations;
 
 
 
 public class DialogueSystem : MonoBehaviour
 {
-    private static DialogueSystem _instance;
-    public static DialogueSystem instance => _instance;
-
-
+    
+    public PlayerStatus isdial;
+    public AreaInteraction Area;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip dialogueTypingSoundClip; [Range(1, 5)]
+    [SerializeField] private int frequencyLevel = 1;
+    [SerializeField] private bool StopAudioSource;
+    
+
+
+
 
     private int index;
+    private void playDialogueSound(int currentDisplayedChraracterCount)
+    {
+        if (currentDisplayedChraracterCount % frequencyLevel == 0)
+        {
+            audioSource.PlayOneShot(dialogueTypingSoundClip);
+            print("a"+currentDisplayedChraracterCount);
+        }
+    }
 
 
     private void Awake()
     {
-        _instance = this;
+        audioSource = this.gameObject.AddComponent<AudioSource>();
+        /*textComponent.text = string.Empty;*/
     }
-
+    
     void Start()
     {
-        textComponent.text = string.Empty;
-        //StartDialogue();
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
+        
+
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index])     
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -51,13 +69,23 @@ public class DialogueSystem : MonoBehaviour
     {
         index = 0;
         StartCoroutine(TypeLine());
+        
+
     }
 
     private IEnumerator TypeLine()
     {
+        
         foreach (char c in lines[index].ToCharArray())
         {
+            int characterCount = 0;
             textComponent.text += c;
+            if (!char.IsWhiteSpace(c) && char.IsLetterOrDigit(c))
+            {
+                characterCount++;
+                playDialogueSound(c);
+            }
+
             yield return new WaitForSeconds(textSpeed);
         }
     }
@@ -66,13 +94,15 @@ public class DialogueSystem : MonoBehaviour
     {
         if (index < lines.Length - 1)
         {
+            
             index++;
             textComponent.text = string.Empty;
             StartCoroutine (TypeLine());
         }
         else
         {
-            gameObject.SetActive(false);
+            Area.NPCPanel.SetActive(false);
+            isdial.isDialogue = false;
         }
     }
 }
