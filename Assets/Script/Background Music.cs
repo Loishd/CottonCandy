@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
+    private AudioSource BG_music;
     bool Toggle = false;
     void Start()
     {
@@ -13,11 +14,16 @@ public class BackgroundMusic : MonoBehaviour
     {
         Toggle = !Toggle;
         Debug.Log("Toggle:" + Toggle);
+        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        ToggleSystem();
+
+        if (Toggle == true)
+        {
+            
+        }
     }
 }
