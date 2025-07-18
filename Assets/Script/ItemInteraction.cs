@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour
@@ -11,7 +12,8 @@ public class ItemInteraction : MonoBehaviour
     public GameObject itemType;
     private Rigidbody2D rb;
     public bool canInteractItem = false;
-    public int ItemValue;
+    public ItemQuest it;
+    
     
     
     private void Awake()
@@ -33,13 +35,23 @@ public class ItemInteraction : MonoBehaviour
         
         if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            
-            if (itemPicker.pickupitemstatus == false)
+            if (!PlayerStatus.instance.checkItem(it))
+            {
+                if (itemPicker.pickupitemstatus == false)
+                {
+                    PlayerStatus.instance.addItem(it);
+                    itemType.SetActive(false);
+                    itemPicker.pickupitemstatus = true;
+                }
+            }
+
+            /*if (itemPicker.pickupitemstatus == false)
             {
                 if (ItemValue == 10)
                 {
                     Debug.Log("Got Axe!");
                     itemprogresser.HaveAxe = true;
+                    
                 }
                 else if (ItemValue == 1)
                 {
@@ -52,9 +64,10 @@ public class ItemInteraction : MonoBehaviour
                 }
                 itemType.SetActive(false);
                 itemPicker.pickupitemstatus = true;
-            }
+            }*/
 
         }
+        
 
     }
 

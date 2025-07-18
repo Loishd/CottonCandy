@@ -8,12 +8,15 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AreaInteraction : MonoBehaviour
 {
-    public PlayerStatus isdial;
+    public PlayerStatus playerstatus;
     public DialogueSystem dialogue;
     public GameObject NPCPanel;
     private Rigidbody2D rb;
-    public bool canInteract = false;
-    
+    [HideInInspector] public bool canInteract = false;
+    public ItemQuest requireItem1;
+    public ItemQuest requireItem2;
+
+
 
     private void Awake()
     {
@@ -29,27 +32,31 @@ public class AreaInteraction : MonoBehaviour
     
     void Update()
     {
-        
-
-
-
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (isdial.HaveAxe == true)
+            if (PlayerStatus.instance.checkItem(requireItem1))
             {
-                Debug.Log("Go To Cutscene");
+                Debug.Log("Axe Cutscene");
+            }
+            else if (PlayerStatus.instance.checkItem(requireItem2))
+            {
+                Debug.Log("Flower Cutscene");
             }
             else
             {
-                if (isdial.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+
+                if (playerstatus.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
                     dialogue.textComponent.text = string.Empty; //reset dialogue
                     NPCPanel.SetActive(true); //show dialogue
                     dialogue.StartDialogue(); //run the dialogue
-                    isdial.isDialogue = true;
+                    playerstatus.isDialogue = true;
                 }
+
             }
+            
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //if player in this area can interact
@@ -68,7 +75,7 @@ public class AreaInteraction : MonoBehaviour
             canInteract = false;
             NPCPanel.SetActive(false); //same as void upd
             dialogue.textComponent.text = string.Empty;
-            isdial.isDialogue = false;
+            playerstatus.isDialogue = false;
         }
         
     }

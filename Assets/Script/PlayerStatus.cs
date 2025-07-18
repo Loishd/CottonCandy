@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    public bool isDialogue;
-    public bool pickupitemstatus;
-    public bool HaveAxe;
-    public bool HaveNeedle;
+    private static PlayerStatus _instance;
+    public static PlayerStatus instance => _instance;
+
+
+    public bool isDialogue; //is talking
+    public bool pickupitemstatus; //pick up yet?
+    public List<ItemQuest> itembag = new List<ItemQuest>();
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
     void Start()
     {
         pickupitemstatus = false;
-        HaveAxe = false;
-        HaveNeedle = false;
+        
+
+
     }
 
     
@@ -21,14 +37,33 @@ public class PlayerStatus : MonoBehaviour
         
     }
 
-    /*if (isDialogue == true)
+    public bool checkItem(ItemQuest item)
+    {
+        foreach (ItemQuest itemstring in itembag)
         {
-            PlayerControl.Instance.speed = 0;
-
+            if (itemstring == item)
+            {
+                return true;
+            }
         }
-        else if (isDialogue == false)
+        return false;
+    }
+
+    public void addItem(ItemQuest item)
+    {
+        itembag.Add(item);
+    }
+
+    public bool checkItemAndRemove(ItemQuest item)
+    {
+        foreach (ItemQuest itemstring in itembag)
         {
-            PlayerControl.Instance.speed = 5;
-            Debug.Log("Set Speed to Normal");
-        }*/
+            if (itemstring == item)
+            {
+                itembag.Remove(item);
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -30,7 +30,6 @@ public class DialogueSystem : MonoBehaviour
         if (currentDisplayedChraracterCount % frequencyLevel == 0)
         {
             audioSource.PlayOneShot(dialogueTypingSoundClip);
-            print("a"+currentDisplayedChraracterCount);
         }
     }
 
