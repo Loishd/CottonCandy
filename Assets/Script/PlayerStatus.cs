@@ -28,7 +28,6 @@ public class PlayerStatus : MonoBehaviour
     {
         pickupitemstatus = false;
         acceptSteakQuest = false;
-
     }
 
     

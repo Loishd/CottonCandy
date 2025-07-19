@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class AreaInteraction : MonoBehaviour
     public ItemQuest flowerStudentEnding;
     public ItemQuest flowerButterEnding;
     public ItemQuest fishnotEnd;
+    public ItemQuest flowerSketchEnding;
 
 
 
@@ -48,7 +50,7 @@ public class AreaInteraction : MonoBehaviour
             {
                 Debug.Log("FlowerButterfly Cutscene");
             }
-            else if (PlayerStatus.instance.checkItem(fishnotEnd)) // fishnotEnd && SteakQuest == true
+            else if (PlayerStatus.instance.checkItem(fishnotEnd))
             {
                 Debug.Log("FishEnding Cutscene");
             }
@@ -57,18 +59,20 @@ public class AreaInteraction : MonoBehaviour
                 Debug.Log("Give Steak a fish for free");
                 playerstatus.pickupitemstatus = false;
             }
-            
+            else if (PlayerStatus.instance.checkItem(flowerSketchEnding))
+            {
+                Debug.Log("Quit Job Ending");
+            }
             else
             {
-
                 if (playerstatus.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
-                    
+
                     dialogue.textComponent.text = string.Empty; //reset dialogue
                     NPCPanel.SetActive(true); //show dialogue
                     dialogue.StartDialogue(); //run the dialogue
                     playerstatus.isDialogue = true;
-                    
+
                 }
 
             }

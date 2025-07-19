@@ -489,6 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78844088}
   - component: {fileID: 78844089}
+  - component: {fileID: 78844090}
   m_Layer: 0
   m_Name: ItemModel2
   m_TagString: Untagged
@@ -552,17 +553,38 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 854934bc84a28b047b21ff2e755d8d4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6c4e317ba2ba3c34faf450259f7fb9bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 0.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &78844090
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78844087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b768cc8fa28c47498897494c69eb86b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &97790863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1069,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 0}
   flowerButterEnding: {fileID: 0}
   fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 0}
 --- !u!1 &177335150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1624,7 @@ RectTransform:
   - {fileID: 1041953763}
   - {fileID: 1320030993}
   - {fileID: 873671728}
+  - {fileID: 461697629}
   - {fileID: 2019656226}
   m_Father: {fileID: 6250825}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2364,6 +2388,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &461697628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461697629}
+  - component: {fileID: 461697631}
+  - component: {fileID: 461697630}
+  m_Layer: 6
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &461697629
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461697628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 240191814}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 418.48, y: -238.39}
+  m_SizeDelta: {x: 1083.0488, y: 603.22}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &461697630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461697628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d001756e13e8e4f4e894434ce6a0a569, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &461697631
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461697628}
+  m_CullTransparentMesh: 1
 --- !u!1 &511003713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,8 +2580,8 @@ GameObject:
   - component: {fileID: 511967171}
   - component: {fileID: 511967170}
   - component: {fileID: 511967169}
-  - component: {fileID: 511967168}
-  - component: {fileID: 511967167}
+  - component: {fileID: 511967172}
+  - component: {fileID: 511967173}
   m_Layer: 0
   m_Name: Area6
   m_TagString: Untagged
@@ -2505,39 +2604,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1170673571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &511967167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511967165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc841cd15817dbb4da471c3ef358a7e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canInteractItem: 0
---- !u!114 &511967168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511967165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 728b2d84f9076f8438eb72f075e3e0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerstatus: {fileID: 1388736359}
-  dialogue: {fileID: 1041953764}
-  NPCPanel: {fileID: 1041953762}
-  canInteract: 0
-  axeEnding: {fileID: 0}
-  flowerStudentEnding: {fileID: 0}
-  flowerButterEnding: {fileID: 0}
-  fishnotEnd: {fileID: 0}
 --- !u!61 &511967169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2662,6 +2728,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &511967172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511967165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728b2d84f9076f8438eb72f075e3e0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerstatus: {fileID: 1388736359}
+  dialogue: {fileID: 1041953764}
+  NPCPanel: {fileID: 1041953762}
+  canInteract: 0
+  axeEnding: {fileID: 0}
+  flowerStudentEnding: {fileID: 0}
+  flowerButterEnding: {fileID: 0}
+  fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 11400000, guid: 5677655abf8f3734e87b70ad8b83c368, type: 2}
+--- !u!114 &511967173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511967165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4d0b06075eaf648bb460672612a7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canInteractItem: 0
+  item: {fileID: 11400000, guid: 099ced120d0f36049a046f712e6493d6, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,6 +5251,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 0}
   flowerButterEnding: {fileID: 11400000, guid: 5677655abf8f3734e87b70ad8b83c368, type: 2}
   fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 0}
 --- !u!61 &920479939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5602,6 +5704,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 11400000, guid: 5677655abf8f3734e87b70ad8b83c368, type: 2}
   flowerButterEnding: {fileID: 0}
   fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 0}
 --- !u!61 &984144372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5968,11 +6071,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isdial: {fileID: 1388736359}
-  Area: {fileID: 1260573122}
+  Area: {fileID: 511967172}
   textComponent: {fileID: 1158546225}
   lines:
-  - Com
-  - Hate You
+  - Im Charlie
+  - You can have my notebook
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
   frequencyLevel: 2
@@ -6898,6 +7001,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 0}
   flowerButterEnding: {fileID: 0}
   fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 0}
 --- !u!114 &1260573123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7788,11 +7892,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isdial: {fileID: 1388736359}
-  Area: {fileID: 1260573122}
+  Area: {fileID: 1694931443}
   textComponent: {fileID: 916580648}
   lines:
-  - Com
-  - Hate You
+  - Im Tony
+  - You shall not pass
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
   frequencyLevel: 2
@@ -8078,6 +8182,7 @@ MonoBehaviour:
   MusicSource: {fileID: 0}
   SFXSource: {fileID: 0}
   background: {fileID: 0}
+  timer: 600
   _pausedScreen: {fileID: 0}
 --- !u!4 &1353955210
 Transform:
@@ -8942,6 +9047,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 0}
   flowerButterEnding: {fileID: 0}
   fishnotEnd: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
+  flowerSketchEnding: {fileID: 0}
 --- !u!61 &1455949713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10507,6 +10613,7 @@ MonoBehaviour:
   flowerStudentEnding: {fileID: 0}
   flowerButterEnding: {fileID: 0}
   fishnotEnd: {fileID: 0}
+  flowerSketchEnding: {fileID: 0}
 --- !u!61 &1694931444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12687,6 +12794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019656226}
   - component: {fileID: 2019656228}
+  - component: {fileID: 2019656229}
   m_Layer: 5
   m_Name: Bag
   m_TagString: Untagged
@@ -12711,7 +12819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 871, y: -460}
+  m_AnchoredPosition: {x: 871, y: -449.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2019656228
@@ -12740,6 +12848,14 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!222 &2019656229
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019656225}
+  m_CullTransparentMesh: 1
 --- !u!1 &2026247980
 GameObject:
   m_ObjectHideFlags: 0

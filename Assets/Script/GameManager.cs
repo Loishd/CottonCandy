@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 using UnityEditorInternal;
 using UnityEngine;
 
@@ -9,12 +10,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource MusicSource;
     [SerializeField] AudioSource SFXSource;
     public AudioSource background;
-
+    public float timer = 600f;
+    
 
     private static GameManager _instance;
     public static GameManager instance => _instance;
 
     public GameObject _pausedScreen;
+
+   
 
     private void Awake()
     {
@@ -27,36 +31,24 @@ public class GameManager : MonoBehaviour
             _instance = this;
         }
     }
-    void Start()
+
+    private void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        EInteract();
-
+        StartCoroutine(CountdownCoroutine(timer));
         
+          
     }
 
-
-    ///////////////////////////////////////////////////////////////////// FUNCTIONs
-    public void EInteract () //pressed E to Interact
+    IEnumerator CountdownCoroutine(float time)
     {
-        /*if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("Pressed E to Interact");
+        yield return new WaitForSeconds(time);
+        Debug.Log("Insert AFK ending here");
 
-
-
-        }*/
     }
 
-   
-       
 
 
-
+  
+    
 
 }

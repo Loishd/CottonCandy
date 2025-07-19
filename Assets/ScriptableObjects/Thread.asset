@@ -12,8 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4630acfe270fb8a43baceb1bd4184b60, type: 3}
   m_Name: Thread
   m_EditorClassIdentifier: 
-  requireAxe: 0
-  requireNeedle: 0
-  requireThread: 1
-  requireNt: 0
-  requireFish: 0
+  itemName: Thread
+  itemSprite: {fileID: 0}

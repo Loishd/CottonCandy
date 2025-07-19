@@ -42,6 +42,7 @@ public class ItemInteraction : MonoBehaviour
                     PlayerStatus.instance.addItem(it);
                     itemType.SetActive(false);
                     itemPicker.pickupitemstatus = true;
+                    
                 }
             }
 

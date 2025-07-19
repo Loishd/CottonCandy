@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Axe
   m_EditorClassIdentifier: 
   itemName: Axe
-  itemSprite: {fileID: 21300000, guid: 9bf33d50dd34c0e4899c26fa8369b19b, type: 3}
+  itemSprite: {fileID: 21300000, guid: a643751c516c97d4082c9fcbefd3b006, type: 3}

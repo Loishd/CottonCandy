@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fish
   m_EditorClassIdentifier: 
   itemName: Fish
-  itemSprite: {fileID: 21300000, guid: 7b41c931c24885049b75cdd048ed1577, type: 3}
+  itemSprite: {fileID: 21300000, guid: b423cc7f7e12783459e6f2ee6b0bcbaa, type: 3}

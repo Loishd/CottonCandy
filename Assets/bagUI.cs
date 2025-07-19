@@ -9,6 +9,8 @@ public class bagUI : MonoBehaviour
     public static bagUI instance => _instance;
     public ItemQuest it;
     private Image image;
+
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -24,16 +26,17 @@ public class bagUI : MonoBehaviour
     {
         image = GetComponent<Image>();
         
-        
     }
 
     
     void Update()
     {
+
         if (PlayerStatus.instance.pickupitemstatus == true)
         {
-            
+            it = PlayerStatus.instance.itembag[0];
             image.sprite = it.itemSprite;
         }
+
     }
 }

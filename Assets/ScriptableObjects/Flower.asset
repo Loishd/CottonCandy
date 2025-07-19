@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Flower
   m_EditorClassIdentifier: 
   itemName: Flower
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 6c4e317ba2ba3c34faf450259f7fb9bc, type: 3}
