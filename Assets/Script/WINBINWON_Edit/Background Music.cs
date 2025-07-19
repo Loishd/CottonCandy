@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
-    private AudioSource BG_music;
+    [SerializeField] AudioSource Music;
     bool Toggle = false;
     void Start()
     {
@@ -21,9 +21,6 @@ public class BackgroundMusic : MonoBehaviour
     void Update()
     {
 
-        if (Toggle == true)
-        {
-            
-        }
+       
     }
 }
