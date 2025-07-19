@@ -25,10 +25,10 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 910ba7e9fe242024d9a767f1ab558bfc, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: a608c2e9d6a2ec042be64d96aa2f2b17, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: c717d86309d70654887a5fb6d597f0f9, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: a447fb24da19ff04c89d315d4f9cbb7e, type: 3}
