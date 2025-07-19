@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4630acfe270fb8a43baceb1bd4184b60, type: 3}
   m_Name: Flower
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Flower
   itemSprite: {fileID: 0}
