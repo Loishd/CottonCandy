@@ -361,8 +361,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728b2d84f9076f8438eb72f075e3e0e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerstatus: {fileID: 0}
   dialogue: {fileID: 0}
+  NPCPanel: {fileID: 0}
   canInteract: 1
+  requireItem1: {fileID: 0}
+  requireItem2: {fileID: 0}
 --- !u!61 &440852382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -583,6 +587,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d640c93306504274bb70569c76672aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicSource: {fileID: 0}
+  SFXSource: {fileID: 0}
+  background: {fileID: 0}
   _pausedScreen: {fileID: 0}
 --- !u!4 &1059695684
 Transform:
