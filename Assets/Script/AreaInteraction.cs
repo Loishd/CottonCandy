@@ -13,8 +13,10 @@ public class AreaInteraction : MonoBehaviour
     public GameObject NPCPanel;
     private Rigidbody2D rb;
     [HideInInspector] public bool canInteract = false;
-    public ItemQuest requireItem1;
-    public ItemQuest requireItem2;
+    public ItemQuest axeEnding;
+    public ItemQuest flowerStudentEnding;
+    public ItemQuest flowerButterEnding;
+    public ItemQuest fishnotEnd;
 
 
 
@@ -34,23 +36,39 @@ public class AreaInteraction : MonoBehaviour
     {
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (PlayerStatus.instance.checkItem(requireItem1))
+            if (PlayerStatus.instance.checkItem(axeEnding))
             {
                 Debug.Log("Axe Cutscene");
             }
-            else if (PlayerStatus.instance.checkItem(requireItem2))
+            else if (PlayerStatus.instance.checkItem(flowerStudentEnding))
             {
-                Debug.Log("Flower Cutscene");
+                Debug.Log("FlowerStudent Cutscene");
             }
+            else if (PlayerStatus.instance.checkItem(flowerButterEnding))
+            {
+                Debug.Log("FlowerButterfly Cutscene");
+            }
+            else if (PlayerStatus.instance.checkItem(fishnotEnd)) // fishnotEnd && SteakQuest == true
+            {
+                Debug.Log("FishEnding Cutscene");
+            }
+            else if (PlayerStatus.instance.checkItemAndRemove(fishnotEnd)) 
+            {
+                Debug.Log("Give Steak a fish for free");
+                playerstatus.pickupitemstatus = false;
+            }
+            
             else
             {
 
                 if (playerstatus.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
+                    
                     dialogue.textComponent.text = string.Empty; //reset dialogue
                     NPCPanel.SetActive(true); //show dialogue
                     dialogue.StartDialogue(); //run the dialogue
                     playerstatus.isDialogue = true;
+                    
                 }
 
             }

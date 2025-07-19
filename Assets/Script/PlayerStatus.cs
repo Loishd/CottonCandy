@@ -7,9 +7,10 @@ public class PlayerStatus : MonoBehaviour
     private static PlayerStatus _instance;
     public static PlayerStatus instance => _instance;
 
-
+    [SerializeField] private AreaInteraction areaInt;
     public bool isDialogue; //is talking
     public bool pickupitemstatus; //pick up yet?
+    public bool acceptSteakQuest;
     public List<ItemQuest> itembag = new List<ItemQuest>();
 
     private void Awake()
@@ -26,8 +27,7 @@ public class PlayerStatus : MonoBehaviour
     void Start()
     {
         pickupitemstatus = false;
-        
-
+        acceptSteakQuest = false;
 
     }
 
@@ -52,6 +52,7 @@ public class PlayerStatus : MonoBehaviour
     public void addItem(ItemQuest item)
     {
         itembag.Add(item);
+        item = bagUI.instance.it;
     }
 
     public bool checkItemAndRemove(ItemQuest item)
@@ -66,4 +67,14 @@ public class PlayerStatus : MonoBehaviour
         }
         return false;
     }
+
+    
+
+    
+
+
+
+
+
+
 }
