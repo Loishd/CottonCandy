@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AreaInteraction : MonoBehaviour
@@ -16,10 +17,12 @@ public class AreaInteraction : MonoBehaviour
     [HideInInspector] public bool canInteract = false;
     public ItemQuest axeEnding;
     public ItemQuest flowerStudentEnding;
+    public ItemQuest foodStudentEnding;
     public ItemQuest flowerButterEnding;
     public ItemQuest fishnotEnd;
     public ItemQuest flowerSketchEnding;
-
+    public ItemQuest sewkitStudentEnding;
+    public ItemQuest dollQuestEnding;
 
 
     private void Awake()
@@ -50,18 +53,27 @@ public class AreaInteraction : MonoBehaviour
             {
                 Debug.Log("FlowerButterfly Cutscene");
             }
-            else if (PlayerStatus.instance.checkItem(fishnotEnd))
+            else if (PlayerStatus.instance.checkItem(foodStudentEnding))
             {
-                Debug.Log("FishEnding Cutscene");
+                Debug.Log("FoodEnding Cutscene");
             }
-            else if (PlayerStatus.instance.checkItemAndRemove(fishnotEnd)) 
+            else if (PlayerStatus.instance.checkItem(fishnotEnd) && PlayerStatus.instance.acceptSteakQuest == false) 
             {
+                PlayerStatus.instance.itembag.RemoveAt(0);
                 Debug.Log("Give Steak a fish for free");
                 playerstatus.pickupitemstatus = false;
             }
             else if (PlayerStatus.instance.checkItem(flowerSketchEnding))
             {
                 Debug.Log("Quit Job Ending");
+            }
+            else if (PlayerStatus.instance.checkItem(sewkitStudentEnding))
+            {
+                Debug.Log("sewkitStudent");
+            }
+            else if (PlayerStatus.instance.checkItem(dollQuestEnding))
+            {
+                Debug.Log("dollEnding");
             }
             else
             {

@@ -7,7 +7,9 @@ public class bagUI : MonoBehaviour
 {
     private static bagUI _instance;
     public static bagUI instance => _instance;
-    public ItemQuest it;
+    public ItemQuest it1;
+    public ItemQuest it2;
+    public ItemQuest invisIt;
     private Image image;
 
 
@@ -32,10 +34,22 @@ public class bagUI : MonoBehaviour
     void Update()
     {
 
-        if (PlayerStatus.instance.pickupitemstatus == true)
+        if (PlayerStatus.instance.itembag.Count == 1)
         {
-            it = PlayerStatus.instance.itembag[0];
-            image.sprite = it.itemSprite;
+            it1 = PlayerStatus.instance.itembag[0];
+            image.sprite = it1.itemSprite;
+        }
+
+            if (PlayerStatus.instance.itembag.Count > 1)
+            {
+                it2 = PlayerStatus.instance.itembag[1];
+                image.sprite = it2.itemSprite;
+            }
+
+        if (PlayerStatus.instance.itembag.Count <= 0)
+        {
+            it1 = null;
+            image.sprite = invisIt.itemSprite;
         }
 
     }

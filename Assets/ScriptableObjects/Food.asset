@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4630acfe270fb8a43baceb1bd4184b60, type: 3}
-  m_Name: Thread
+  m_Name: Food
   m_EditorClassIdentifier: 
-  itemName: Thread
-  itemSprite: {fileID: 21300000, guid: d992de4f2cd2f534a896b4c5dabf6011, type: 3}
+  itemName: Food
+  itemSprite: {fileID: 21300000, guid: 32f4fab19bf043b47994e23227f7c70a, type: 3}

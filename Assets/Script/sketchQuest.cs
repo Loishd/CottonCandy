@@ -10,20 +10,19 @@ public class sketchQuest : MonoBehaviour
 
     void Update()
     {
-        if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
-        {
-
-            if (PlayerStatus.instance.isDialogue == false)
+        
+            if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
             {
-                if (PlayerStatus.instance.pickupitemstatus == false)
+                if (PlayerStatus.instance.itembag.Count == 0)
                 {
-                    PlayerStatus.instance.addItem(item);
-                    PlayerStatus.instance.pickupitemstatus = true;
+                    if (PlayerStatus.instance.pickupitemstatus == false)
+                    {
+                        PlayerStatus.instance.addItem(item);
+                        PlayerStatus.instance.pickupitemstatus = true;
+
+                    }
                 }
             }
-
-        }
-
     }
 
         private void OnTriggerEnter2D(Collider2D collision) //if player in this area can interact

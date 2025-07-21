@@ -11,6 +11,11 @@ public class PlayerStatus : MonoBehaviour
     public bool isDialogue; //is talking
     public bool pickupitemstatus; //pick up yet?
     public bool acceptSteakQuest;
+    public bool steakQuestSuccessfully;
+    public bool HaveNeedle;
+    public bool HaveThread;
+    public bool acceptDollQuest;
+    public bool dollQuestSuccessfully;
     public List<ItemQuest> itembag = new List<ItemQuest>();
 
     private void Awake()
@@ -28,7 +33,12 @@ public class PlayerStatus : MonoBehaviour
     {
         pickupitemstatus = false;
         acceptSteakQuest = false;
-    }
+        steakQuestSuccessfully = false;
+        acceptDollQuest = false;
+        dollQuestSuccessfully = false;
+        HaveNeedle = false;
+        HaveThread = false;
+}
 
     
     void Update()
@@ -51,7 +61,7 @@ public class PlayerStatus : MonoBehaviour
     public void addItem(ItemQuest item)
     {
         itembag.Add(item);
-        item = bagUI.instance.it;
+        item = bagUI.instance.it1;
     }
 
     public bool checkItemAndRemove(ItemQuest item)

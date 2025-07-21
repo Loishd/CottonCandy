@@ -26,7 +26,6 @@ public class ItemInteraction : MonoBehaviour
         
         itemType.SetActive(true);
         
-        
     }
 
 
@@ -45,28 +44,6 @@ public class ItemInteraction : MonoBehaviour
                     
                 }
             }
-
-            /*if (itemPicker.pickupitemstatus == false)
-            {
-                if (ItemValue == 10)
-                {
-                    Debug.Log("Got Axe!");
-                    itemprogresser.HaveAxe = true;
-                    
-                }
-                else if (ItemValue == 1)
-                {
-                    Debug.Log("Got Needle!");
-                    itemprogresser.HaveNeedle = true;
-                }
-                else
-                {
-                    Debug.Log("Neutral");
-                }
-                itemType.SetActive(false);
-                itemPicker.pickupitemstatus = true;
-            }*/
-
         }
         
 

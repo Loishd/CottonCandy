@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Needle
   m_EditorClassIdentifier: 
   itemName: Needle
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: b6f58d692e0f3ca459de05ff95391323, type: 3}
