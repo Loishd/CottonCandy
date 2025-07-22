@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 313331878}
   - component: {fileID: 313331880}
   - component: {fileID: 313331879}
+  - component: {fileID: 313331881}
   m_Layer: 5
   m_Name: Frame
   m_TagString: Untagged
@@ -532,6 +533,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313331877}
   m_CullTransparentMesh: 1
+--- !u!225 &313331881
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313331877}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &326257647
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 772076441}
   - component: {fileID: 772076442}
+  - component: {fileID: 772076443}
   m_Layer: 5
   m_Name: GameOverScreen
   m_TagString: Untagged
@@ -987,6 +1001,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b3a8bc7353e72643bb1461cf20aeac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &772076443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772076440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fccc9e08eeb432448889ea8a01dcf3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &818253548
@@ -1398,6 +1424,7 @@ GameObject:
   - component: {fileID: 1234005131}
   - component: {fileID: 1234005133}
   - component: {fileID: 1234005132}
+  - component: {fileID: 1234005134}
   m_Layer: 5
   m_Name: CurtainSide
   m_TagString: Untagged
@@ -1462,6 +1489,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234005130}
   m_CullTransparentMesh: 1
+--- !u!225 &1234005134
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234005130}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &1534144574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,9 +1584,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 102900000, guid: 9365409c17b92a04bbcdc7005857ca17, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 772076443}
+        m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
