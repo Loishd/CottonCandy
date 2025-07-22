@@ -57,12 +57,6 @@ public class AreaInteraction : MonoBehaviour
             {
                 Debug.Log("FoodEnding Cutscene");
             }
-            else if (PlayerStatus.instance.checkItem(fishnotEnd) && PlayerStatus.instance.acceptSteakQuest == false) 
-            {
-                PlayerStatus.instance.itembag.RemoveAt(0);
-                Debug.Log("Give Steak a fish for free");
-                playerstatus.pickupitemstatus = false;
-            }
             else if (PlayerStatus.instance.checkItem(flowerSketchEnding))
             {
                 Debug.Log("Quit Job Ending");

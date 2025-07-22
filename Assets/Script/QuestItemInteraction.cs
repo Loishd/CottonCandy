@@ -8,6 +8,7 @@ public class QuestItemInteraction : MonoBehaviour
     public GameObject itemType;
     public ItemQuest itemGiver1;
     public ItemQuest itemGiver2;
+    public ItemQuest itemNeed;
 
     void Start()
     {
@@ -17,18 +18,27 @@ public class QuestItemInteraction : MonoBehaviour
     
     void Update()
     {
+        
+        if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
+        {
+            if (PlayerStatus.instance.colinQuestsuccessfully == true)
+            {
+                Debug.Log("Run the Colin Ending");
+            }
+        }
+
+
         if (PlayerStatus.instance.dollQuestSuccessfully == true)
         {
             if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
             {
-                if (!PlayerStatus.instance.checkItem(itemGiver2))
+                if (PlayerStatus.instance.checkItem(itemNeed))
                 {
-                    if (PlayerStatus.instance.pickupitemstatus == false)
+                    if (!PlayerStatus.instance.checkItem(itemGiver2))
                     {
+                        PlayerStatus.instance.itembag.Clear();
                         PlayerStatus.instance.addItem(itemGiver2);
-                        itemType.SetActive(false);
-                        PlayerStatus.instance.pickupitemstatus = true;
-
+                        itemType.SetActive(false);  
                     }
                 }
             }
@@ -55,7 +65,7 @@ public class QuestItemInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) //if player in this area can interact
     {
-        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true)
+        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true || PlayerStatus.instance.colinQuestsuccessfully == true)
         {
             if (collision.CompareTag("Player"))
             {
@@ -69,7 +79,7 @@ public class QuestItemInteraction : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision) //if player in this area cannot interact
     {
 
-        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true)
+        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true || PlayerStatus.instance.colinQuestsuccessfully == true)
         {
             if (collision.CompareTag("Player"))
             {
