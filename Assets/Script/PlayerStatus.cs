@@ -6,8 +6,6 @@ public class PlayerStatus : MonoBehaviour
 {
     private static PlayerStatus _instance;
     public static PlayerStatus instance => _instance;
-
-    [SerializeField] private AreaInteraction areaInt;
     public bool isDialogue; //is talking
     public bool pickupitemstatus; //pick up yet?
     public bool acceptSteakQuest;
@@ -16,6 +14,10 @@ public class PlayerStatus : MonoBehaviour
     public bool HaveThread;
     public bool acceptDollQuest;
     public bool dollQuestSuccessfully;
+    public bool foundSpeaker;
+    public bool acceptColinQuest;
+    public bool colinQuestsuccessfully;
+
     public List<ItemQuest> itembag = new List<ItemQuest>();
 
     private void Awake()
@@ -36,6 +38,9 @@ public class PlayerStatus : MonoBehaviour
         steakQuestSuccessfully = false;
         acceptDollQuest = false;
         dollQuestSuccessfully = false;
+        foundSpeaker = false;
+        acceptColinQuest = false;
+        colinQuestsuccessfully = false;
         HaveNeedle = false;
         HaveThread = false;
 }

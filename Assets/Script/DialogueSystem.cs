@@ -11,7 +11,6 @@ public class DialogueSystem : MonoBehaviour
 {
     
     public PlayerStatus isdial;
-    public AreaInteraction Area;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
@@ -100,7 +99,7 @@ public class DialogueSystem : MonoBehaviour
         }
         else
         {
-            Area.NPCPanel.SetActive(false);
+            this.gameObject.SetActive(false);
             isdial.isDialogue = false;
         }
     }

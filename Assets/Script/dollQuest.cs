@@ -7,8 +7,6 @@ public class dollQuest : MonoBehaviour
     private Rigidbody2D rb;
     public bool canInteractItem = false;
     public GameObject itemType;
-    public ItemQuest requireItem;
-    public ItemQuest giveItem;
 
     void Start()
     {
@@ -20,25 +18,12 @@ public class dollQuest : MonoBehaviour
     {
         if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-
             if (PlayerStatus.instance.acceptDollQuest == false)
             {
                 PlayerStatus.instance.acceptDollQuest = true;
                 itemType.SetActive(true);
             }
-
-
-            if (PlayerStatus.instance.itembag.Count == 1)
-            {
-                if (PlayerStatus.instance.checkItem(requireItem) && PlayerStatus.instance.acceptDollQuest == true)
-                {
-                    PlayerStatus.instance.itembag.RemoveAt(0);
-                    PlayerStatus.instance.dollQuestSuccessfully = true;
-                    PlayerStatus.instance.pickupitemstatus = false; 
-                    
-
-                }
-            }
+            
         }
     }
 
