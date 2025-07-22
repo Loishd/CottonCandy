@@ -6,15 +6,15 @@ public class AudioManage : MonoBehaviour
     [SerializeField] AudioSource MusicSource;
     [SerializeField] AudioSource SFXSource;
 
-    [Header(" ---------- Audio Clip---------- ")]
-    public AudioClip background;
+   /* [Header(" ---------- Audio Clip---------- ")]*/
+    /*public AudioClip background;*/
    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
