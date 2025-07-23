@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class TentQuest : MonoBehaviour
@@ -7,10 +8,11 @@ public class TentQuest : MonoBehaviour
     private Rigidbody2D rb;
     public bool canInteractItem = false;
     public GameObject itemType;
+    public GameObject barrier;
 
     void Start()
     {
-        
+        barrier.SetActive(false);
     }
 
     
@@ -22,6 +24,7 @@ public class TentQuest : MonoBehaviour
             {
                 PlayerStatus.instance.foundSpeaker = true;
                 itemType.SetActive(true);
+                barrier.SetActive(true);
                 Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest2);
             }
         }
