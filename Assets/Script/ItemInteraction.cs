@@ -42,8 +42,19 @@ public class ItemInteraction : MonoBehaviour
                     itemType.SetActive(false);
                     itemPicker.pickupitemstatus = true;
                     
+                    if (it.itemName == "Axe")
+                    {
+                        Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest1);
+                    }
+
+                    else if (it.itemName == "Flower")
+                    {
+                        Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest8);
+                    }
                 }
             }
+
+
         }
         
 

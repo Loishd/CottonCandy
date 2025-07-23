@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Doll
   m_EditorClassIdentifier: 
   itemName: Doll
-  itemSprite: {fileID: 21300000, guid: 85597cab0fd27164dbeecf6bc919817f, type: 3}
+  itemSprite: {fileID: 21300000, guid: 212a2b6db4819214a862ea18e0a5f2c3, type: 3}

@@ -51,6 +51,7 @@ public class CraftAndPick : MonoBehaviour
             PlayerStatus.instance.itembag.Clear();
             PlayerStatus.instance.addItem(sewkit);
             PlayerStatus.instance.dollQuestSuccessfully = true;
+            Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest6);
         }
     }
 

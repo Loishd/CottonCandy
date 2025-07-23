@@ -34,7 +34,7 @@ public class steakQuest : MonoBehaviour
                 PlayerStatus.instance.itembag.RemoveAt(0);
                 Debug.Log("Give Steak a fish for Colin Quest");
                 PlayerStatus.instance.colinQuestsuccessfully = true;
-
+                Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest4);
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
 
@@ -53,7 +53,7 @@ public class steakQuest : MonoBehaviour
                     PlayerStatus.instance.steakQuestSuccessfully = true;
                     PlayerStatus.instance.pickupitemstatus = false;
                     itemType.SetActive(true);
-
+                    Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest11);
                     if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                     {
 
@@ -94,6 +94,7 @@ public class steakQuest : MonoBehaviour
                 if (PlayerStatus.instance.acceptColinQuest == false)
                 {
                     PlayerStatus.instance.acceptSteakQuest = true;
+                    Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest10);
                 }      
             }
         }

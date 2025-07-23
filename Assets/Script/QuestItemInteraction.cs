@@ -9,6 +9,8 @@ public class QuestItemInteraction : MonoBehaviour
     public ItemQuest itemGiver1;
     public ItemQuest itemGiver2;
     public ItemQuest itemNeed;
+    public DialogueSystem dialogue;
+    public GameObject NPCPanel;
 
     void Start()
     {
@@ -25,6 +27,20 @@ public class QuestItemInteraction : MonoBehaviour
             {
                 Debug.Log("Run the Colin Ending");
             }
+            else
+            {
+                if (!PlayerStatus.instance.checkItem(itemNeed))
+                {
+                    if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                    {
+
+                        dialogue.textComponent.text = string.Empty; //reset dialogue
+                        NPCPanel.SetActive(true); //show dialogue
+                        dialogue.StartDialogue(); //run the dialogue
+                        PlayerStatus.instance.isDialogue = true;
+                    }
+                }
+            }
         }
 
 
@@ -38,7 +54,22 @@ public class QuestItemInteraction : MonoBehaviour
                     {
                         PlayerStatus.instance.itembag.Clear();
                         PlayerStatus.instance.addItem(itemGiver2);
-                        itemType.SetActive(false);  
+                        itemType.SetActive(false);
+                        Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest7);
+                    }
+                }
+                else
+                {
+                    if (!PlayerStatus.instance.checkItem(itemNeed))
+                    {
+                        if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                        {
+
+                            dialogue.textComponent.text = string.Empty; //reset dialogue
+                            NPCPanel.SetActive(true); //show dialogue
+                            dialogue.StartDialogue(); //run the dialogue
+                            PlayerStatus.instance.isDialogue = true;
+                        }
                     }
                 }
             }
@@ -65,29 +96,26 @@ public class QuestItemInteraction : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) //if player in this area can interact
     {
-        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true || PlayerStatus.instance.colinQuestsuccessfully == true)
+
+        if (collision.CompareTag("Player"))
         {
-            if (collision.CompareTag("Player"))
-            {
-                canInteractItem = true;
+            canInteractItem = true;
 
-            }
         }
-
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision) //if player in this area cannot interact
     {
 
-        if (PlayerStatus.instance.steakQuestSuccessfully == true || PlayerStatus.instance.dollQuestSuccessfully == true || PlayerStatus.instance.colinQuestsuccessfully == true)
+        if (collision.CompareTag("Player"))
         {
-            if (collision.CompareTag("Player"))
-            {
-                canInteractItem = false;
-
-            }
+            canInteractItem = false;
+            NPCPanel.SetActive(false);
+            dialogue.textComponent.text = string.Empty;
+            PlayerStatus.instance.isDialogue = false;
         }
-
+        
     }
 
 

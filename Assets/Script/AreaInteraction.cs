@@ -60,6 +60,7 @@ public class AreaInteraction : MonoBehaviour
             else if (PlayerStatus.instance.checkItem(flowerSketchEnding))
             {
                 Debug.Log("Quit Job Ending");
+                Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest9);
             }
             else if (PlayerStatus.instance.checkItem(sewkitStudentEnding))
             {

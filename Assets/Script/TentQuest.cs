@@ -22,6 +22,7 @@ public class TentQuest : MonoBehaviour
             {
                 PlayerStatus.instance.foundSpeaker = true;
                 itemType.SetActive(true);
+                Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest2);
             }
         }
 

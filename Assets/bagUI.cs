@@ -40,11 +40,11 @@ public class bagUI : MonoBehaviour
             image.sprite = it1.itemSprite;
         }
 
-            if (PlayerStatus.instance.itembag.Count > 1)
-            {
-                it2 = PlayerStatus.instance.itembag[1];
-                image.sprite = it2.itemSprite;
-            }
+        if (PlayerStatus.instance.itembag.Count > 1)
+        {
+            it2 = PlayerStatus.instance.itembag[1];
+            image.sprite = it2.itemSprite;
+        }
 
         if (PlayerStatus.instance.itembag.Count <= 0)
         {

@@ -21,6 +21,7 @@ public class dollQuest : MonoBehaviour
             if (PlayerStatus.instance.acceptDollQuest == false)
             {
                 PlayerStatus.instance.acceptDollQuest = true;
+                Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest5);
                 itemType.SetActive(true);
             }
             

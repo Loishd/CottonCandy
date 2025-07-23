@@ -37,6 +37,7 @@ public class colinQuest : MonoBehaviour
                 if (PlayerStatus.instance.acceptColinQuest == false)
                 {
                     PlayerStatus.instance.acceptColinQuest = true;
+                    Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest3);
                 }
             }
             else if (PlayerStatus.instance.colinQuestsuccessfully == true)
