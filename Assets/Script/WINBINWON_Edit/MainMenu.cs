@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
     {/*
         LevelManager.Instance.LoadScene("Game", "CrossFade");*/
         MusicManager.Instance.PlayMusic("BGM");
+        print("a");
     }
 
     public void Quit()

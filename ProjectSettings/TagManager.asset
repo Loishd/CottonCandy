@@ -40,11 +40,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1528729079
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tree
+    uniqueID: 2033978927
+    locked: 0
   - name: Player
     uniqueID: 4000654931
+    locked: 0
+  - name: NPC
+    uniqueID: 2124029179
     locked: 0
   - name: Area
     uniqueID: 4004431969
