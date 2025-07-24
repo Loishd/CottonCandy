@@ -8,7 +8,7 @@ public class CheckTabs : MonoBehaviour
     [SerializeField] private GameObject GalleryTab;
     [SerializeField] private GameObject CreditTab;
     bool TabBoolean = false;
-    int a = 0;
+    
     public void OnTabGallery()
     {
         if (TabBoolean == false)

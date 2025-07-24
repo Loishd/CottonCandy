@@ -281,12 +281,12 @@ AudioSource:
   m_GameObject: {fileID: 156086090}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4404788977280008401, guid: d2d39b9eccd1eb2449b049b50ac81de9, type: 2}
   m_audioClip: {fileID: 8300000, guid: c6e75c7bbe2e5ee4aa70f213004a2181, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1153,7 +1153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f784d2bbdc5cf84458a0f6170312adcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracks: []
+  tracks:
+  - trackName: BGM
+    clip: {fileID: 8300000, guid: c6e75c7bbe2e5ee4aa70f213004a2181, type: 3}
 --- !u!114 &587897139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,7 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5afad33fb8505246bdb1836874d1574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicLibrary: {fileID: 0}
+  musicLibrary: {fileID: 587897138}
   musicSource: {fileID: 156086091}
 --- !u!1 &594304861
 GameObject:
@@ -1587,9 +1589,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093551360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60e98ee7d2b9d7e45bd8012a6a5c3a09, type: 3}
+  m_Script: {fileID: 11500000, guid: cfd53da173b8d1849a6f762beb69ef2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 0}
 --- !u!1 &1259793823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,7 +2530,7 @@ GameObject:
   - component: {fileID: 1854367481}
   - component: {fileID: 1854367482}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: musicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2599,10 +2602,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1259793824}
   m_HandleRect: {fileID: 2093806833}
   m_Direction: 2
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
