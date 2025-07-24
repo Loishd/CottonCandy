@@ -30,8 +30,12 @@ public class sketchQuest : MonoBehaviour
                         dialogue3.StartDialogue(); //run the dialogue
                         PlayerStatus.instance.isDialogue = true;
                     }
+
+                    PlayerStatus.instance.itembag.RemoveAt(0);
                     Debug.Log("Quit Job Ending");
+                    PlayerStatus.instance.sketchFlowerSuccessfully = true;
                     Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest9);
+
                 }
 
                 if (PlayerStatus.instance.checkItem(item))

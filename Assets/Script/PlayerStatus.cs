@@ -17,6 +17,7 @@ public class PlayerStatus : MonoBehaviour
     public bool foundSpeaker;
     public bool acceptColinQuest;
     public bool colinQuestsuccessfully;
+    public bool sketchFlowerSuccessfully;
 
     public List<ItemQuest> itembag = new List<ItemQuest>();
 
@@ -43,6 +44,7 @@ public class PlayerStatus : MonoBehaviour
         colinQuestsuccessfully = false;
         HaveNeedle = false;
         HaveThread = false;
+        sketchFlowerSuccessfully = false;
 }
 
     
