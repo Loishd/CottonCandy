@@ -57,8 +57,8 @@ public class sketchQuest : MonoBehaviour
                     {
                         PlayerStatus.instance.addItem(item);
                         PlayerStatus.instance.pickupitemstatus = true;
-
-                        if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                        Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest12);
+                    if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                         {
 
                             dialogue1.textComponent.text = string.Empty; //reset dialogue
