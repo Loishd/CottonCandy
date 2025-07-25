@@ -318,8 +318,9 @@ MonoBehaviour:
   - GO!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &15561330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +435,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 5337fd3b81ff03d46b79cfd44520a41a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3052,8 +3053,9 @@ MonoBehaviour:
   - You have JOB to do isn't it!!?
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &153079301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,7 +4652,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 32
   m_Sprite: {fileID: 21300000, guid: 355354ea62401a642b853d3179595d85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5733,7 +5735,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 5337fd3b81ff03d46b79cfd44520a41a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5980,14 +5982,14 @@ RectTransform:
   m_GameObject: {fileID: 279167463}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.07099998}
-  m_LocalScale: {x: 0.34999993, y: 0.3464389, z: 0.34999993}
+  m_LocalScale: {x: 0.34999993, y: 0.38, z: 0.34999993}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 201368448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.59, y: -13.66}
+  m_AnchoredPosition: {x: -20.85, y: -13.28}
   m_SizeDelta: {x: 10.06, y: 12.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &279167465
@@ -6211,8 +6213,9 @@ MonoBehaviour:
   - I sus
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!1 &316616264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,8 +6951,9 @@ MonoBehaviour:
   - Now... GETOUT!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &350722532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8411,14 +8415,14 @@ RectTransform:
   m_GameObject: {fileID: 447082935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.07099998}
-  m_LocalScale: {x: 0.57999986, y: 0.57999986, z: 0.57999986}
+  m_LocalScale: {x: 0.48, y: 0.64, z: 0.57999986}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1433476782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.650833, y: -13.502562}
+  m_AnchoredPosition: {x: -22.22, y: -12.29}
   m_SizeDelta: {x: 4.46, y: 5.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &447082937
@@ -10928,7 +10932,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 24
   m_Sprite: {fileID: 21300000, guid: e7dc6c36577791240869eaa6ecb64a02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11016,7 +11020,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: 60183ba9b4b06b844824331c4fcfe49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11314,8 +11318,9 @@ MonoBehaviour:
   - delicious fish
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &584419473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12013,7 +12018,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 107
   m_Sprite: {fileID: 21300000, guid: 60183ba9b4b06b844824331c4fcfe49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12101,7 +12106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 23
   m_Sprite: {fileID: 21300000, guid: 59b6b30357f201b41959c79e40a196a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12696,7 +12701,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 355354ea62401a642b853d3179595d85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12767,8 +12772,9 @@ MonoBehaviour:
   - He surely wanna play with me!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &662262481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15347,9 +15353,10 @@ MonoBehaviour:
   - (or at least he should be the one who looks after the kids?)
   - (nevermind, maybe my job is to replace him so whatever, just let him be)
   textSpeed: 0.05
-  dialogueTypingSoundClip: {fileID: 8300000, guid: 48ad94305a8d278459b525936ea978d3, type: 3}
+  dialogueTypingSoundClip: {fileID: 0}
   frequencyLevel: 1
   StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &834811164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15447,8 +15454,9 @@ MonoBehaviour:
   - Thanks for Colin!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &839724477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15563,7 +15571,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 48
   m_Sprite: {fileID: 21300000, guid: 14ede02de6101124fbf3c0af2d656f32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15941,8 +15949,9 @@ MonoBehaviour:
   - IF you have ingrediants!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!1 &865045698
 GameObject:
   m_ObjectHideFlags: 0
@@ -16424,7 +16433,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5337fd3b81ff03d46b79cfd44520a41a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17241,7 +17250,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 17
   m_Sprite: {fileID: 21300000, guid: e7dc6c36577791240869eaa6ecb64a02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18919,8 +18928,9 @@ MonoBehaviour:
   - You can have my notebook
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1041953765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19210,8 +19220,9 @@ MonoBehaviour:
   - (Its just a broken doll...)
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1052731010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19586,8 +19597,9 @@ MonoBehaviour:
   - ....
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1075344987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21182,8 +21194,9 @@ MonoBehaviour:
   - (its a food made by Steak..)
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1152927414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21576,14 +21589,14 @@ RectTransform:
   m_GameObject: {fileID: 1204677099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.07099998}
-  m_LocalScale: {x: 0.41715914, y: 0.41715914, z: 0.41715914}
+  m_LocalScale: {x: 0.41715914, y: 0.63, z: 0.41715914}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1433476782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.510832, y: -9.612556}
+  m_AnchoredPosition: {x: -24.4, y: -8.81}
   m_SizeDelta: {x: 4.46, y: 5.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1204677101
@@ -21626,7 +21639,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 867070c95055bfe47bce8db9902b5fd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22574,7 +22587,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 19
   m_Sprite: {fileID: 21300000, guid: 14ede02de6101124fbf3c0af2d656f32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22746,8 +22759,9 @@ MonoBehaviour:
   - Hate You
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!224 &1252236535
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23620,7 +23634,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 22
   m_Sprite: {fileID: 21300000, guid: 14ede02de6101124fbf3c0af2d656f32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23989,7 +24003,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 22
   m_Sprite: {fileID: 21300000, guid: e7dc6c36577791240869eaa6ecb64a02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24695,8 +24709,9 @@ MonoBehaviour:
   - You shall not pass
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1320030995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25452,8 +25467,9 @@ MonoBehaviour:
   - (Its broken...)
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!1 &1375265004
 GameObject:
   m_ObjectHideFlags: 0
@@ -28150,8 +28166,9 @@ MonoBehaviour:
   - ROBLOX
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!1 &1547205573
 GameObject:
   m_ObjectHideFlags: 0
@@ -28957,7 +28974,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: -32
   m_Sprite: {fileID: 21300000, guid: 60183ba9b4b06b844824331c4fcfe49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29342,8 +29359,9 @@ MonoBehaviour:
   - for free!
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1656467207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32411,6 +32429,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778738464}
   m_CullTransparentMesh: 1
+--- !u!1 &1785607774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785607776}
+  - component: {fileID: 1785607775}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1785607775
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785607774}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1785607776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785607774}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2023313097}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1786182959
 GameObject:
   m_ObjectHideFlags: 0
@@ -33189,7 +33335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.9059601, y: -6.7120075}
+  m_AnchoredPosition: {x: -1.42, y: -6.7120075}
   m_SizeDelta: {x: 4.46, y: 5.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1820983604
@@ -34143,7 +34289,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 22
   m_Sprite: {fileID: 21300000, guid: 5337fd3b81ff03d46b79cfd44520a41a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34510,8 +34656,9 @@ MonoBehaviour:
   - (But its broken...)
   textSpeed: 0.075
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
-  frequencyLevel: 2
-  StopAudioSource: 1
+  frequencyLevel: 1
+  StopAudioSource: 0
+  num_Index: 1
 --- !u!114 &1889757106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35775,7 +35922,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 21
   m_Sprite: {fileID: 21300000, guid: 14ede02de6101124fbf3c0af2d656f32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -37772,6 +37919,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019656225}
   m_CullTransparentMesh: 1
+--- !u!1 &2023313094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023313097}
+  - component: {fileID: 2023313096}
+  - component: {fileID: 2023313095}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023313095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023313094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757cbbb63e1b08546b243c9c2e834ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffects:
+  - groupID: SFX01
+    clips:
+    - {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
+    - {fileID: 8300000, guid: 4b09f526f8c04114f91c1916d869689c, type: 3}
+    - {fileID: 8300000, guid: c97bcc58df0de684f8dbb8596db0cf7a, type: 3}
+  - groupID: SFX02
+    clips:
+    - {fileID: 8300000, guid: 90aa2a0fa0c2d3848b18f86950950005, type: 3}
+    - {fileID: 8300000, guid: a7dfe7226af4427438905c045d54d100, type: 3}
+    - {fileID: 8300000, guid: 48ad94305a8d278459b525936ea978d3, type: 3}
+  - groupID: SFX03
+    clips:
+    - {fileID: 8300000, guid: 6f859f9abfc98854780edf4f9d047e34, type: 3}
+    - {fileID: 8300000, guid: 5c2f0a384dc466a4687c743da7a830bd, type: 3}
+    - {fileID: 8300000, guid: 108d511fd17dbb345b823b2db6d30987, type: 3}
+  - groupID: SFX04
+    clips:
+    - {fileID: 8300000, guid: 1593fb6063618a242a740a65fb730609, type: 3}
+    - {fileID: 8300000, guid: 35d4c630b4796df448d4e0e7884987e2, type: 3}
+    - {fileID: 8300000, guid: aa69eca1b1eef10469ba600aeb2b1834, type: 3}
+  - groupID: SFX05
+    clips:
+    - {fileID: 8300000, guid: ebeb59473c99dc24a9676cf8870a4087, type: 3}
+    - {fileID: 8300000, guid: 7383f9f920996ab4c9a6e5e5071cd66a, type: 3}
+    - {fileID: 8300000, guid: edb54bdfae07822478ffe1bf6ba35458, type: 3}
+    - {fileID: 8300000, guid: fc2346ef386ff7247a94c257e81bf7bc, type: 3}
+--- !u!114 &2023313096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023313094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375b167da5aeeef40a5b124b58d630ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxLibrary: {fileID: 2023313095}
+  sfx2DSource: {fileID: 1785607775}
+--- !u!4 &2023313097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023313094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.0895586, y: -8.227547, z: -0.07560811}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1785607776}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023892082
 GameObject:
   m_ObjectHideFlags: 0
@@ -39090,7 +39324,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 35
   m_Sprite: {fileID: 21300000, guid: 60183ba9b4b06b844824331c4fcfe49d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39820,7 +40054,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 59b6b30357f201b41959c79e40a196a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -40140,3 +40374,4 @@ SceneRoots:
   - {fileID: 332852222}
   - {fileID: 330431911}
   - {fileID: 1330328528}
+  - {fileID: 2023313097}

@@ -13,12 +13,17 @@ public class MainMenu : MonoBehaviour
     {
         Play();
         LoadVolume();
-        MusicManager.Instance.PlayMusic("MusicSource");
-        SoundManager.Instance.PlaySound3D("SFX01", transform.position);
+        /*MusicManager.Instance.PlayMusic("MusicSource");*/
+
 
     }
     private void Update()
     {
+
+    }
+    public void Test()
+    {
+        SoundManager.Instance.PlaySound2D("SFX01");
     }
     public void Play()
     {/*
