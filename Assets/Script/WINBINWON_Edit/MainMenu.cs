@@ -25,6 +25,10 @@ public class MainMenu : MonoBehaviour
     {
         SoundManager.Instance.PlaySound2D("SFX01");
     }
+    public void OpenMusicButton()
+    {
+        
+    }
     public void Play()
     {/*
         LevelManager.Instance.LoadScene("Game", "CrossFade");*/
@@ -119,5 +123,9 @@ public class MainMenu : MonoBehaviour
     public void Scene_MainMenu()
     {
         SceneManager.LoadSceneAsync(1);
+    }
+    public void CutScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }
