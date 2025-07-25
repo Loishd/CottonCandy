@@ -10,44 +10,47 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - Area
+  - Object
+  - Npc
+  - Player
+  - UI
+  - OverLay
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - Camera
-  - Button
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   m_SortingLayers:
   - name: BG
     uniqueID: 1528729079
     locked: 0
+  - name: Tree
+    uniqueID: 2033978927
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Tree
-    uniqueID: 2033978927
+  - name: Object
+    uniqueID: 706667269
     locked: 0
   - name: Player
     uniqueID: 4000654931

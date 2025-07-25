@@ -1,25 +1,44 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Slider musicSlider;
     public Slider sfxSlider;
-
+    public PlayableDirector fadeInDirector;
+    public PlayableDirector fadeOutDirector;
+    public GameObject Trasition;
+    private void Awake()
+    {
+        Trasition.SetActive(true);
+    }
     private void Start()
     {
+        
+        CutScene_FadeOut();
         Play();
         LoadVolume();
         /*MusicManager.Instance.PlayMusic("MusicSource");*/
-
+     
 
     }
+    
     private void Update()
     {
 
+    }
+    public void CutScene_FadeIn()
+    {
+        fadeInDirector.Play();
+    }
+    public void CutScene_FadeOut()
+    {
+        fadeOutDirector.Play();
     }
     public void Test()
     {
@@ -115,17 +134,46 @@ public class MainMenu : MonoBehaviour
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-    }
-    public void LoadScene()
+    } 
+    public void CutScene()
     {
-        SceneManager.LoadSceneAsync(2);
+        StartCoroutine(delayScene00());
+        
     }
     public void Scene_MainMenu()
     {
-        SceneManager.LoadSceneAsync(1);
+        StartCoroutine(delayScene01());
+        
     }
-    public void CutScene()
+    public void LoadScene()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(delayScene02());
+        
     }
+   
+    IEnumerator delayScene00()
+    {
+        CutScene_FadeIn(); 
+        yield return new WaitForSeconds(2); 
+        SceneManager.LoadSceneAsync(0);
+        yield return new WaitForSeconds(2);
+        Trasition.SetActive(false);
+    }
+    IEnumerator delayScene01()
+    {
+        CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadSceneAsync(1);
+        yield return new WaitForSeconds(2);
+        Trasition.SetActive(false);
+    }
+    IEnumerator delayScene02()
+    {
+        CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadSceneAsync(2);
+        yield return new WaitForSeconds(2);
+        Trasition.SetActive(false);
+    }
+    
 }
