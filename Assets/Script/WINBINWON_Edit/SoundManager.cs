@@ -11,6 +11,35 @@ public class SoundManager : MonoBehaviour
     private SoundLibrary sfxLibrary;
     [SerializeField]
     private AudioSource sfx2DSource;
+    public void PlaySFX01()
+    {
+        SoundManager.Instance.PlaySound2D("SFX01");
+    }
+    public void PlaySFX02()
+    {
+        SoundManager.Instance.PlaySound2D("SFX02");
+    }
+    public void PlaySFX03()
+    {
+        SoundManager.Instance.PlaySound2D("SFX03");
+    }
+    public void PlaySFX04()
+    {
+        SoundManager.Instance.PlaySound2D("SFX04");
+    }
+    public void PlaySFX05()
+    {
+        SoundManager.Instance.PlaySound2D("SFX05");
+    }
+    public void PlayFootstepSound()
+    {
+        SoundManager.Instance.PlaySound2D("SFX_FOOTSTEP");
+    }
+    public void PlayUIclick()
+    {
+        SoundManager.Instance.PlaySound2D("SFX_UI");
+    }
+
 
     private void Awake()
     {
@@ -35,7 +64,7 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySound3D(string soundName, Vector3 pos)
     {
-        PlaySound3D(sfxLibrary.GetClipFromName(soundName), pos);
+        PlaySound3D(sfxLibrary.GetClipFromName(soundName), pos);                                                                            
     }
 
     public void PlaySound2D(string soundName)

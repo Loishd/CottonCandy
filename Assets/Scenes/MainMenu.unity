@@ -1185,7 +1185,7 @@ MonoBehaviour:
   soundEffects:
   - groupID: SFX01
     clips:
-    - {fileID: 8300000, guid: 7383f9f920996ab4c9a6e5e5071cd66a, type: 3}
+    - {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
     - {fileID: 8300000, guid: 4b09f526f8c04114f91c1916d869689c, type: 3}
     - {fileID: 8300000, guid: c97bcc58df0de684f8dbb8596db0cf7a, type: 3}
   - groupID: SFX02
@@ -1209,6 +1209,12 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 7383f9f920996ab4c9a6e5e5071cd66a, type: 3}
     - {fileID: 8300000, guid: edb54bdfae07822478ffe1bf6ba35458, type: 3}
     - {fileID: 8300000, guid: fc2346ef386ff7247a94c257e81bf7bc, type: 3}
+  - groupID: SFX_FOOTSTEP
+    clips:
+    - {fileID: 8300000, guid: dd76340617adbc642ba9dbb0a117100c, type: 3}
+  - groupID: SFX_UI
+    clips:
+    - {fileID: 8300000, guid: dd76340617adbc642ba9dbb0a117100c, type: 3}
 --- !u!114 &587897141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2655,8 +2661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 20, y: 160}
+  m_AnchoredPosition: {x: 0, y: -23.117989}
+  m_SizeDelta: {x: 20, y: 81.5872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854367482
 MonoBehaviour:

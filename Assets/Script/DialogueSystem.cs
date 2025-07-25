@@ -25,6 +25,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void SelectIndex(int SFX_Index)
     {
+
         if (SFX_Index == 1)
         {
             PlaySFX01();
@@ -47,11 +48,10 @@ public class DialogueSystem : MonoBehaviour
         }
 
     }
-
-        public void PlaySFX01()
-        {
-            SoundManager.Instance.PlaySound2D("SFX01");
-        }
+    public void PlaySFX01()
+    {
+        SoundManager.Instance.PlaySound2D("SFX01");
+    }
     public void PlaySFX02()
     {
         SoundManager.Instance.PlaySound2D("SFX02");
@@ -68,6 +68,7 @@ public class DialogueSystem : MonoBehaviour
     {
         SoundManager.Instance.PlaySound2D("SFX05");
     }
+
 
     private int index;
     private void playDialogueSound(int currentDisplayedChraracterCount)
