@@ -14,6 +14,7 @@ public class DialogueSystem : MonoBehaviour
     public PlayerStatus isdial;
     public TextMeshProUGUI textComponent;
     public string[] lines;
+    public GameObject[] sprites;
     public float textSpeed;
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip; [Range(1, 5)]
