@@ -5,9 +5,8 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-   
-    private SoundLibrary sfxLibrary;
-    [SerializeField]private SoundLibrary sfxSoundLibrary;
+    [SerializeField]private SoundLibrary sfxLibrary;
+    [SerializeField]private AudioSource sfxSoundLibrary;
     private void Awake()
     {
         if (Instance != null)

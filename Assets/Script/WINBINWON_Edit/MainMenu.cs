@@ -14,13 +14,16 @@ public class MainMenu : MonoBehaviour
         Play();
         LoadVolume();
         MusicManager.Instance.PlayMusic("MusicSource");
-    }
+        SoundManager.Instance.PlaySound3D("SFX01", transform.position);
 
+    }
+    private void Update()
+    {
+    }
     public void Play()
     {/*
         LevelManager.Instance.LoadScene("Game", "CrossFade");*/
         MusicManager.Instance.PlayMusic("BGM");
-        print("a");
     }
 
     public void Quit()
@@ -46,7 +49,59 @@ public class MainMenu : MonoBehaviour
         audioMixer.GetFloat("SFXVolume", out float sfxVolume);
         PlayerPrefs.SetFloat("SFXVolume", sfxVolume);
     }
+    [SerializeField] private GameObject pannel;
+    [SerializeField] private GameObject GalleryTab;
+    [SerializeField] private GameObject CreditTab;
+    bool TabBoolean = false;
 
+    public void OnTabGallery()
+    {
+        if (TabBoolean == false)
+        {
+            GalleryTab.SetActive(true);
+            TabBoolean = true;
+            return;
+        }
+
+    }
+    public void OffTabGallery()
+    {
+        if (TabBoolean == true)
+        {
+            GalleryTab.SetActive(false);
+            TabBoolean = false;
+            return;
+        }
+    }
+    public void OnTabCredit()
+    {
+        if (TabBoolean == false)
+        {
+            CreditTab.SetActive(true);
+            TabBoolean = true;
+            return;
+        }
+
+    }
+
+    public void OffTabCredit()
+    {
+        if (TabBoolean == true)
+        {
+            CreditTab.SetActive(false);
+            TabBoolean = false;
+            return;
+        }
+    }
+    void OpenTabs()
+    {
+        if (pannel.activeSelf == false)
+        {
+            pannel.SetActive(true);
+            return;
+        }
+
+    }
     public void LoadVolume()
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");

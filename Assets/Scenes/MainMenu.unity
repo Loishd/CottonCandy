@@ -205,8 +205,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1423853034}
-        m_TargetAssemblyTypeName: CheckTabs, Assembly-CSharp
+      - m_Target: {fileID: 1423853036}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: OffTabGallery
         m_Mode: 1
         m_Arguments:
@@ -783,8 +783,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1423853034}
-        m_TargetAssemblyTypeName: CheckTabs, Assembly-CSharp
+      - m_Target: {fileID: 1423853036}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: OnTabGallery
         m_Mode: 1
         m_Arguments:
@@ -1028,8 +1028,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1423853034}
-        m_TargetAssemblyTypeName: CheckTabs, Assembly-CSharp
+      - m_Target: {fileID: 1423853036}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: OnTabCredit
         m_Mode: 1
         m_Arguments:
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375b167da5aeeef40a5b124b58d630ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxSoundLibrary: {fileID: 0}
+  sfxSoundLibrary: {fileID: 587897140}
 --- !u!114 &587897140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,7 +1181,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757cbbb63e1b08546b243c9c2e834ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffects: []
+  soundEffects:
+  - groupID: BEEPSoundEFFECT01
+    clips:
+    - {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
+    - {fileID: 8300000, guid: 4b09f526f8c04114f91c1916d869689c, type: 3}
+    - {fileID: 8300000, guid: c97bcc58df0de684f8dbb8596db0cf7a, type: 3}
+  - groupID: BEEPSoundEFFECT02
+    clips:
+    - {fileID: 8300000, guid: 90aa2a0fa0c2d3848b18f86950950005, type: 3}
+    - {fileID: 8300000, guid: a7dfe7226af4427438905c045d54d100, type: 3}
+    - {fileID: 8300000, guid: 48ad94305a8d278459b525936ea978d3, type: 3}
+  - groupID: BEEPSoundEFFECT03
+    clips:
+    - {fileID: 8300000, guid: 6f859f9abfc98854780edf4f9d047e34, type: 3}
+    - {fileID: 8300000, guid: 5c2f0a384dc466a4687c743da7a830bd, type: 3}
+    - {fileID: 8300000, guid: 108d511fd17dbb345b823b2db6d30987, type: 3}
+  - groupID: BEEPSoundEFFECT04
+    clips:
+    - {fileID: 8300000, guid: 1593fb6063618a242a740a65fb730609, type: 3}
+    - {fileID: 8300000, guid: 35d4c630b4796df448d4e0e7884987e2, type: 3}
+    - {fileID: 8300000, guid: aa69eca1b1eef10469ba600aeb2b1834, type: 3}
+  - groupID: BEEPSoundEFFECT05
+    clips:
+    - {fileID: 8300000, guid: ebeb59473c99dc24a9676cf8870a4087, type: 3}
+    - {fileID: 8300000, guid: 7383f9f920996ab4c9a6e5e5071cd66a, type: 3}
+    - {fileID: 8300000, guid: edb54bdfae07822478ffe1bf6ba35458, type: 3}
+    - {fileID: 8300000, guid: fc2346ef386ff7247a94c257e81bf7bc, type: 3}
 --- !u!114 &587897141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,8 +1378,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1423853034}
-        m_TargetAssemblyTypeName: CheckTabs, Assembly-CSharp
+      - m_Target: {fileID: 1423853036}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: OffTabCredit
         m_Mode: 1
         m_Arguments:
@@ -1679,7 +1705,6 @@ GameObject:
   - component: {fileID: 1304515292}
   - component: {fileID: 1304515291}
   - component: {fileID: 1304515293}
-  - component: {fileID: 1304515295}
   - component: {fileID: 1304515296}
   m_Layer: 0
   m_Name: Main Camera
@@ -1799,18 +1824,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1304515295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304515289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fccc9e08eeb432448889ea8a01dcf3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &1304515296
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1833,8 +1846,6 @@ GameObject:
   - component: {fileID: 1423853028}
   - component: {fileID: 1423853032}
   - component: {fileID: 1423853033}
-  - component: {fileID: 1423853034}
-  - component: {fileID: 1423853035}
   - component: {fileID: 1423853036}
   m_Layer: 5
   m_Name: ScreenTitle
@@ -1992,33 +2003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundEffects: []
---- !u!114 &1423853034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423853027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2462838dbcedd445904d76823dd82b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pannel: {fileID: 0}
-  GalleryTab: {fileID: 594304861}
-  CreditTab: {fileID: 851612028}
---- !u!114 &1423853035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423853027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b3a8bc7353e72643bb1461cf20aeac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1423853036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,6 +2018,9 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: d2d39b9eccd1eb2449b049b50ac81de9, type: 2}
   musicSlider: {fileID: 1854367482}
   sfxSlider: {fileID: 0}
+  pannel: {fileID: 0}
+  GalleryTab: {fileID: 594304861}
+  CreditTab: {fileID: 851612028}
 --- !u!1 &1520147748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,8 +2692,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1304515295}
-        m_TargetAssemblyTypeName: StartScene, Assembly-CSharp
+      - m_Target: {fileID: 1423853036}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
