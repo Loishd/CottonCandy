@@ -89,7 +89,7 @@ public class colinQuest : MonoBehaviour
             dialogue2.textComponent.text = string.Empty;
 
             PlayerStatus.instance.isDialogue = false;
-            CharacterImagine.Instance.closeCharacterImage();
+            CharacterImagine.Instance.closeCharacterImage();    
         }
 
     }

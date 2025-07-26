@@ -404,13 +404,58 @@ MonoBehaviour:
   nameComponent: {fileID: 599464037}
   lines:
   - imagesprite: {fileID: 0}
-    name: Colin
-    text: "Oh then go on. help them. Lend a hand. You\u2019ll both gain something
-      from this Your tool will be fixed\u2026 and\u2014hmm\u2026 how curious. "
+    name: Warren
+    text: "Hey fri..end\u2013 can you help me fix my tools? You are the computer
+      teacher after all."
   - imagesprite: {fileID: 0}
     name: Colin
-    text: I think I sense something else, too. A little spark of care. A quiet kind
-      of love, blooming in the way they act for each other.
+    text: "First of all, I\u2019m not your friend. Even you, are reluctant to say
+      that"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "Second, that's the only reason we\u2026 I mean this school tolerates you
+      and you somehow ruined it?"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: what-
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "you give your presentation for free and so desperate to volunteer, even
+      no one wants it. and now\u2014"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: Hey! the last part is not true
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "then ask yourself a question: why you don\u2019t get any called back again"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: they just don't have business brains like me
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "eugh\u2026"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: I will you fix your thing if you do can do me a favor
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: yes? what is it?
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "make yourself useful. catch some fish for terry, a fitting task for someone
+      like you\u2026 and tell him it\u2019s a gift from me^^ "
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: huh? why?
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: "because I\u2019m a good friend"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "good friends shouldn\u2019t discriminating"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: 'you are not my friend and GO before I changed my mind '
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -1693,7 +1738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69563958
@@ -1781,7 +1826,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -502.97058, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3122,7 +3167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139453905
@@ -3208,7 +3253,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -761.4751, y: 0, z: -476.16736, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3467,7 +3512,25 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 1480618180}
   nameComponent: {fileID: 224247331}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Tony
+    text: "Where do you think you\u2019re going?"
+  - imagesprite: {fileID: 0}
+    name: Tony
+    text: "You\u2019ve only got one job \u2014 and it\u2019s not a 9-to-5, clock-out-early
+      kind of gig. No skipping work, no running off before time\u2019s up Time\u2019s
+      ticking, and I\u2019m watching "
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(That\u2019s the way to go out of this forest. )"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(But as long as Tony\u2019s standing here, there\u2019s no way I\u2019m
+      getting out\u2026)"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(I don\u2019t want my ear to bleed yet)"
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -4984,7 +5047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.79, y: -11.56}
+  m_AnchoredPosition: {x: 4.79, y: -11.69}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &216123465
@@ -5529,7 +5592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228822686
@@ -5617,7 +5680,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -514.48413, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6210,7 +6273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &254928838
@@ -6298,7 +6361,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -500.09204, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6806,7 +6869,41 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 1308656411}
   nameComponent: {fileID: 1514564893}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: What's the matter, my lovely students?
+  - imagesprite: {fileID: 0}
+    name: Yellow
+    text: He tear my baby pegion
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: ' o- oh, a stuff animal'
+  - imagesprite: {fileID: 0}
+    name: Red
+    text: "I didn\u2019t tear it. I just pointed and said, \u2018Let\u2019s go take
+      a look over there.\u2019 That\u2019s all. But then\u2026 he accidentally held
+      the stuffed toy out a little too far... and it got caught on something. And
+      tore."
+  - imagesprite: {fileID: 0}
+    name: Green
+    text: Well It tore because you took us off track in the first place.
+  - imagesprite: {fileID: 0}
+    name: Red
+    text: "Are you saying it\u2019s my fault?"
+  - imagesprite: {fileID: 0}
+    name: Green
+    text: "If we hadn\u2019t gone there, it wouldn\u2019t have happened"
+  - imagesprite: {fileID: 0}
+    name: Red
+    text: "You said we should go too! Don\u2019t act like you didn\u2019t want to!"
+  - imagesprite: {fileID: 0}
+    name: Yellow
+    text: wahhhhhhh
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: 'okay okay stop fighting  we will fix it back okay? (I need to find a way
+      to fix it back together) '
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -7805,7 +7902,31 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 254928838}
   nameComponent: {fileID: 413972729}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Done and he said \u201C Thanks \u201D"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: Great! Great!
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: not bad for wannabe messenger bird when we not online
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(Isn\u2019t that a pigeon\u2019s work?)"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: anddd done!
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: go on and project your insecurities.
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "That\u2019s rude and 100% wrong!"
+  - imagesprite: {fileID: 0}
+    name: Colin
+    text: we will see about that
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -13826,7 +13947,30 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 1935519488}
   nameComponent: {fileID: 448103765}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: " I happened to catch this fish... Not that it swam right up and bit me
+      because it thought I was bait or anything. I mean! I caught it with my bare
+      hands because I\u2019m sharp and skilled \u2014 like a mighty eagle. So, here
+      you go. This one\u2019s for you. "
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "Thanks! With these ingredients, I can cook a meal that\u2019ll warm everyone\u2019s
+      heart You know, sharing a good healthy meal can really lift your spirits. Eating
+      together makes people feel closer "
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(Oh that\u2019s right,I\u2019ve always wanted to go to a restaurant-style
+      meal with friends. It\u2019s not just about the food \u2014 it\u2019s about
+      being together, sharing stories, and making bonds stronger.)"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(Even Shrignold is the only one who is willing to join me\u2026)"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(but maybe I can bring this idea to the students. If they share meals
+      like this, they\u2019ll grow closer too)"
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -16203,7 +16347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698875694
@@ -16291,7 +16435,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -517.3628, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -16444,7 +16588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -289}
+  m_AnchoredPosition: {x: 90, y: -263}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711370086
@@ -16532,7 +16676,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -505.84888, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19181,7 +19325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828219835
@@ -19267,7 +19411,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -500.09204, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19670,7 +19814,29 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 2023892084}
   nameComponent: {fileID: 1227763407}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Here. Colin told me to bring this to you. Said he thought you\u2019d like
+      it."
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "Oh! That\u2019s so kind of him. And of you too, Warren! Please tell Colin
+      I said thank you, will you? I\u2019ll cook something lovely with this, he deserves
+      a little treat. "
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Yeah... I\u2019ll be sure to tell him. I\u2019m sure he\u2019ll be touched...
+      by all the effort I did for him."
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "Well, I hope you\u2019ll join us too. There\u2019s always enough for friends."
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Friends, huh... Yeah. That\u2019d be nice."
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "(but I know Colin won\u2019t let me join anyway)"
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -20382,7 +20548,55 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 228822686}
   nameComponent: {fileID: 2010729142}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: Oh hello, You are Warren right? Nice to meet you.
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Yes! I\u2019m Warren the w\u2013 EAGLE! "
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: How can I help you, Mr. Eagle?
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "Well\u2026 The students are fighting right now. Do you know anything to
+      help?"
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "Ah.. sorry, but my relationship with the kids aren\u2019t good either"
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: Huh? why?
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: You see, the kids are scared of me because my burned face scar
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: That's ridiculous! They are bullying your appearance and that is very very
+      bad!
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: Thank you but no need to be upset for me
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: But you are stuck in a bad friendship!
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "They are just students and my colleagues are nice, so don\u2019t worry."
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "\u2026."
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: Anyway, if you have any ingredients, you can bring them to me. I can cook
+      you a meal.
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: Restaurant-style meals?
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: "I\u2019m not quite sure yet but maybe we can make fish and chips."
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -26687,7 +26901,10 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 1705190430}
   nameComponent: {fileID: 1378343981}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Food
+    text: (Its a food. Nothing more...)
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -29199,7 +29416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274144154
@@ -29287,7 +29504,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -508.7273, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30243,7 +30460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308656411
@@ -30331,7 +30548,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -500.0924, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30758,7 +30975,16 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 1847220004}
   nameComponent: {fileID: 854531391}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: "eh\u2026 Tony. Do you have any suggestions to bring them back in harmony?"
+  - imagesprite: {fileID: 0}
+    name: Tony
+    text: Time will heal
+  - imagesprite: {fileID: 0}
+    name: Warren
+    text: (What's that supposed to mean?)
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -34282,7 +34508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480618180
@@ -34370,7 +34596,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -511.60583, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -36465,7 +36691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613165207
@@ -36553,7 +36779,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -514.48413, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -37290,7 +37516,13 @@ MonoBehaviour:
   isdial: {fileID: 1388736359}
   textComponent: {fileID: 698875694}
   nameComponent: {fileID: 735433519}
-  lines: []
+  lines:
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: Thanks for a fish!
+  - imagesprite: {fileID: 0}
+    name: Terry
+    text: For Free....
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -39170,7 +39402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705190430
@@ -39256,7 +39488,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -500.09204, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -39668,7 +39900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724147294
@@ -39754,7 +39986,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -505.84888, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -41045,7 +41277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1778229089
@@ -41133,7 +41365,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -508.7273, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -43086,7 +43318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847220004
@@ -43174,7 +43406,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -511.60583, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -43997,11 +44229,21 @@ MonoBehaviour:
       a little shake.]'
   - imagesprite: {fileID: 21300000, guid: d70a888f50c79be41960a47ce117761a, type: 3}
     name: Warren
-    text: '[Warren blinked. He tapped the machine. Turned it upside down. Gave it
-      a little shake.]'
+    text: "Huh? Why isn\u2019t it working?"
   - imagesprite: {fileID: 21300000, guid: d70a888f50c79be41960a47ce117761a, type: 3}
     name: Warren
-    text: "Huh? Why isn\u2019t it working?"
+    text: "Wait... did I forget to check it before I left? That doesn\u2019t sound
+      like me\u2026"
+  - imagesprite: {fileID: 21300000, guid: d70a888f50c79be41960a47ce117761a, type: 3}
+    name: Warren
+    text: "\u2026Okay, maybe a little like me. But still\u2014it\u2019s not really
+      my fault."
+  - imagesprite: {fileID: 21300000, guid: d70a888f50c79be41960a47ce117761a, type: 3}
+    name: Warren
+    text: "Well... I guess I\u2019ll have to find some way to fix \u2026. or someone."
+  - imagesprite: {fileID: 21300000, guid: d70a888f50c79be41960a47ce117761a, type: 3}
+    name: Warren
+    text: Or maybe... find another way to teach them about friendship
   textSpeed: 0.075
   characterImage: {fileID: 180717579}
   dialogueTypingSoundClip: {fileID: 8300000, guid: 59caa82b1ce38aa4986726f77cde2ec3, type: 3}
@@ -44554,7 +44796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914881418
@@ -44642,7 +44884,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -511.6057, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -44942,7 +45184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935519488
@@ -45030,7 +45272,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -517.36255, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -47475,7 +47717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: -297}
+  m_AnchoredPosition: {x: 97, y: -271}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023892084
@@ -47563,7 +47805,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -757.027, y: 0, z: -635.3772, w: 0}
+  m_margin: {x: -757.027, y: 0, z: -523.11926, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
