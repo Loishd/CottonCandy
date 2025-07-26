@@ -55,6 +55,9 @@ TagManager:
   - name: Player
     uniqueID: 4000654931
     locked: 0
+  - name: Cover Tree
+    uniqueID: 2460445319
+    locked: 0
   - name: NPC
     uniqueID: 2124029179
     locked: 0
