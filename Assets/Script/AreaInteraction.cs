@@ -100,6 +100,7 @@ public class AreaInteraction : MonoBehaviour
             NPCPanel.SetActive(false); //same as void upd
             dialogue.textComponent.text = string.Empty;
             playerstatus.isDialogue = false;
+            CharacterImagine.Instance.closeCharacterImage();
         }
         
     }

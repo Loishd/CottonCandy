@@ -5,17 +5,27 @@ using TMPro;
 using UnityEditorInternal;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
+using System;
+using UnityEngine.UI;
 
 
+[Serializable]
+public struct DialogueResources
+{
+    public Sprite imagesprite;
+    public string name;
+    public string text;
+};
 
 public class DialogueSystem : MonoBehaviour
 {
 
     public PlayerStatus isdial;
     public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public GameObject[] sprites;
+    public TextMeshProUGUI nameComponent;
+    public DialogueResources[] lines;
     public float textSpeed;
+    public Image characterImage;
     private AudioSource audioSource;
     [SerializeField] private AudioClip dialogueTypingSoundClip; [Range(1, 5)]
     [SerializeField] private int frequencyLevel = 1;
@@ -104,14 +114,15 @@ public class DialogueSystem : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (textComponent.text == lines[index])
+            if (textComponent.text == lines[index].text)
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                textComponent.text = lines[index].text;
+                nameComponent.text = lines[index].name;
             }
         }
     }
@@ -119,6 +130,7 @@ public class DialogueSystem : MonoBehaviour
     public void StartDialogue()
     {
         index = 0;
+        characterImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         StartCoroutine(TypeLine());
         
 
@@ -126,11 +138,12 @@ public class DialogueSystem : MonoBehaviour
 
     private IEnumerator TypeLine()
     {
-        
-        foreach (char c in lines[index].ToCharArray())
+        characterImage.sprite = lines[index].imagesprite;
+        foreach (char c in lines[index].text.ToCharArray())
         {
             int characterCount = 0;
             textComponent.text += c;
+            nameComponent.text = lines[index].name;
             if (!char.IsWhiteSpace(c) && char.IsLetterOrDigit(c))
             {
                 characterCount++;
@@ -149,11 +162,13 @@ public class DialogueSystem : MonoBehaviour
             
             index++;
             textComponent.text = string.Empty;
+            nameComponent.text = string.Empty;
             StartCoroutine (TypeLine());
         }
         else
         {
             this.gameObject.SetActive(false);
+            characterImage.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
             isdial.isDialogue = false;
         }
     }

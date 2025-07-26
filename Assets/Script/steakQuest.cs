@@ -131,6 +131,7 @@ public class steakQuest : MonoBehaviour
             dialogue4.textComponent.text = string.Empty;
 
             PlayerStatus.instance.isDialogue = false;
+            CharacterImagine.Instance.closeCharacterImage();
         }
 
     }
