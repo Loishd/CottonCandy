@@ -8,16 +8,30 @@ public class ExitDoor : MonoBehaviour
     public DialogueSystem dialogue;
     public GameObject NPCPanel;
     public GameObject Barrier;
+    public GameObject Tony;
+    public GameObject Charlie;
+    public GameObject bar1;
+    public GameObject bar2;
 
 
     void Start()
     {
-        
+        bar1.SetActive(false);
+        bar2.SetActive(false);
     }
 
     
     void Update()
     {
+        if (PlayerStatus.instance.sketchFlowerSuccessfully == true) 
+        {
+            Tony.transform.position = new Vector3(5.91f, -20.59f, 0.038f);
+            Charlie.transform.position = new Vector3(-13.37f, -20.45f, 0.038f);
+            bar1.SetActive(true);
+            bar2.SetActive(true);
+
+        }
+
         if (activateBarrier == true && PlayerStatus.instance.sketchFlowerSuccessfully == false)
         {
             Barrier.SetActive(true);
