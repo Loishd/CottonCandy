@@ -15,6 +15,7 @@ public struct DialogueResources
     public Sprite imagesprite;
     public string name;
     public string text;
+    public int numIndex;
 };
 
 public class DialogueSystem : MonoBehaviour

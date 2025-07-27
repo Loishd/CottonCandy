@@ -5,13 +5,25 @@ using UnityEngine.UI;
 
 public class CreativeButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        this.GetComponent<Image>().alphaHitTestMinimumThreshold = 0.1f;
+        Image img = GetComponent<Image>();
+        if (img == null)
+        {
+            Debug.LogError("no img" + gameObject.name);
+            
+        }
+        else
+        {
+            img.alphaHitTestMinimumThreshold = 0.1f;
+        }
+    }
+    void Awake()
+    {
+
     }                              
 
-    // Update is called once per frame
+    
     void Update()
     {
        
