@@ -15,7 +15,9 @@ public struct DialogueResources
     public Sprite imagesprite;
     public string name;
     public string text;
-    public int numIndex;
+    public int soundNumber;
+
+    //characterImage.sprite = lines[index].imagesprite;
 };
 
 public class DialogueSystem : MonoBehaviour
@@ -31,13 +33,12 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private AudioClip dialogueTypingSoundClip; [Range(1, 5)]
     [SerializeField] private int frequencyLevel = 1;
     [SerializeField] private bool StopAudioSource;
-
-    [Range(1, 5)] public int num_Index = 1; 
+    public int num_Index;
 
 
     private void SelectIndex(int SFX_Index)
     {
-
+        
         if (SFX_Index == 1)
         {
             PlaySFX01();
@@ -81,16 +82,17 @@ public class DialogueSystem : MonoBehaviour
         SoundManager.Instance.PlaySound2D("SFX05");
     }
 
-
+    
     private int index;
     private void playDialogueSound(int currentDisplayedChraracterCount)
     {
+        
         if (currentDisplayedChraracterCount % frequencyLevel == 0)
         {
-
+            
             /*audioSource.PlayOneShot(dialogueTypingSoundClip);*/
             SelectIndex(num_Index);
-
+            
         }
     }
     
@@ -99,7 +101,6 @@ public class DialogueSystem : MonoBehaviour
     private void Awake()
     {
         audioSource = this.gameObject.AddComponent<AudioSource>();
-        int SFX_Index = 1;
         /*textComponent.text = string.Empty;*/
     }
     
@@ -112,7 +113,7 @@ public class DialogueSystem : MonoBehaviour
     void Update()
     {
         
-
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == lines[index].text)
@@ -124,6 +125,8 @@ public class DialogueSystem : MonoBehaviour
                 StopAllCoroutines();
                 textComponent.text = lines[index].text;
                 nameComponent.text = lines[index].name;
+                num_Index = lines[index].soundNumber;
+
             }
         }
     }
@@ -145,6 +148,9 @@ public class DialogueSystem : MonoBehaviour
             int characterCount = 0;
             textComponent.text += c;
             nameComponent.text = lines[index].name;
+            num_Index = lines[index].soundNumber;
+
+
             if (!char.IsWhiteSpace(c) && char.IsLetterOrDigit(c))
             {
                 characterCount++;

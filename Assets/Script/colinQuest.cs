@@ -88,6 +88,9 @@ public class colinQuest : MonoBehaviour
             NPCPanel2.SetActive(false); 
             dialogue2.textComponent.text = string.Empty;
 
+            NPCPanel3.SetActive(false);
+            dialogue3.textComponent.text = string.Empty;
+
             PlayerStatus.instance.isDialogue = false;
             CharacterImagine.Instance.closeCharacterImage();    
         }
