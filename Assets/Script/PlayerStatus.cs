@@ -18,6 +18,10 @@ public class PlayerStatus : MonoBehaviour
     public bool acceptColinQuest;
     public bool colinQuestsuccessfully;
     public bool sketchFlowerSuccessfully;
+    public bool triedToExit;
+
+    //ALL ENDING
+    
 
     public List<ItemQuest> itembag = new List<ItemQuest>();
 
@@ -45,6 +49,7 @@ public class PlayerStatus : MonoBehaviour
         HaveNeedle = false;
         HaveThread = false;
         sketchFlowerSuccessfully = false;
+        triedToExit = false;
 }
 
     

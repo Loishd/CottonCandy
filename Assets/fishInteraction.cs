@@ -22,6 +22,7 @@ public class fishInteraction : MonoBehaviour
             {
                 if (itemPicker.pickupitemstatus == false)
                 {
+                    //[                                ]//////////// ADD FISHING CUTSCENE HERE
                     PlayerStatus.instance.addItem(itf);
                     itemPicker.pickupitemstatus = true;
                 }

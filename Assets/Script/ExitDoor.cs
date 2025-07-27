@@ -37,11 +37,11 @@ public class ExitDoor : MonoBehaviour
             Barrier.SetActive(true);
             if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
             {
-
                 dialogue.textComponent.text = string.Empty; //reset dialogue
                 NPCPanel.SetActive(true); //show dialogue
                 dialogue.StartDialogue(); //run the dialogue
                 PlayerStatus.instance.isDialogue = true;
+                PlayerStatus.instance.triedToExit = true;
             }
         }
         else

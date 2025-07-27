@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.GraphView;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -43,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         Debug.Log("Insert AFK ending here");
-
+        PlayerPrefs.SetInt("Ending10", 1);
     }
 
 

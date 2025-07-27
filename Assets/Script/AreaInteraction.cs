@@ -5,8 +5,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class AreaInteraction : MonoBehaviour
 {
@@ -23,8 +21,8 @@ public class AreaInteraction : MonoBehaviour
     public ItemQuest flowerSketchEnding;
     public ItemQuest sewkitStudentEnding;
     public ItemQuest dollQuestEnding;
-
-
+    public ItemQuest notepadEnding;
+    
     private void Awake()
     {
             
@@ -44,26 +42,32 @@ public class AreaInteraction : MonoBehaviour
             if (PlayerStatus.instance.checkItem(axeEnding))
             {
                 Debug.Log("Axe Cutscene");
+                PlayerPrefs.SetInt("Ending1", 1);
             }
             else if (PlayerStatus.instance.checkItem(flowerStudentEnding))
             {
                 Debug.Log("FlowerStudent Cutscene");
-            }
-            else if (PlayerStatus.instance.checkItem(flowerButterEnding))
-            {
-                Debug.Log("FlowerButterfly Cutscene");
+                PlayerPrefs.SetInt("Ending5", 1);
             }
             else if (PlayerStatus.instance.checkItem(foodStudentEnding))
             {
                 Debug.Log("FoodEnding Cutscene");
+                PlayerPrefs.SetInt("Ending9", 1);
             }           
             else if (PlayerStatus.instance.checkItem(sewkitStudentEnding))
             {
                 Debug.Log("sewkitStudent");
+                PlayerPrefs.SetInt("Ending4", 1);
             }
             else if (PlayerStatus.instance.checkItem(dollQuestEnding))
             {
                 Debug.Log("dollEnding");
+                PlayerPrefs.SetInt("Ending3", 1);
+            }
+            else if (PlayerStatus.instance.checkItem(notepadEnding))
+            {
+                Debug.Log("sketchNotepadEnding");
+                PlayerPrefs.SetInt("Ending8", 1);
             }
             else
             {

@@ -26,6 +26,7 @@ public class QuestItemInteraction : MonoBehaviour
             if (PlayerStatus.instance.colinQuestsuccessfully == true)
             {
                 Debug.Log("Run the Colin Ending");
+                PlayerPrefs.SetInt("Ending2", 1);
             }
             else
             {
