@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class steakQuest : MonoBehaviour
 {
@@ -23,7 +24,6 @@ public class steakQuest : MonoBehaviour
         
     }
 
-    
     void Update()
     {
         if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts

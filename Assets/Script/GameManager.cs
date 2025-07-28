@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,7 +17,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject _pausedScreen;
 
-   
+
+    IEnumerator AFKEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("AFKEnding");
+    }
 
     private void Awake()
     {
@@ -32,9 +39,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CountdownCoroutine(timer));
-        
-          
+        StartCoroutine(CountdownCoroutine(timer));  
     }
 
     IEnumerator CountdownCoroutine(float time)
@@ -42,6 +47,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         Debug.Log("Insert AFK ending here");
         PlayerPrefs.SetInt("Ending10", 1);
+        StartCoroutine(AFKEndingInDelay());
     }
 
 
