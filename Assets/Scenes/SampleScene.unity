@@ -6601,15 +6601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eaa4604da33057498a032482e2b5dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
-  fadeInDirector: {fileID: 43069191}
   fadeOutDirector: {fileID: 2100043691}
-  Trasition: {fileID: 0}
-  pannel: {fileID: 0}
-  GalleryTab: {fileID: 0}
-  CreditTab: {fileID: 0}
+  fadeInDirector: {fileID: 43069191}
 --- !u!1 &243747260
 GameObject:
   m_ObjectHideFlags: 0
@@ -45692,7 +45685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1786573999
 MonoBehaviour:
   m_ObjectHideFlags: 0

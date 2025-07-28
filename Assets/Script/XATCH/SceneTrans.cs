@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     public static SceneController instance;
     [SerializeField] Animator transitionAnim;
     [SerializeField] int sceneNumber;
+    [SerializeField] string sceneName;
     public void NextScene()
     {
         StartCoroutine(LoadScene());
@@ -17,7 +18,7 @@ public class SceneController : MonoBehaviour
     {
         transitionAnim.SetTrigger("Drop");
         yield return new WaitForSeconds(1);
-        SceneManager.LoadSceneAsync(sceneNumber);
+        SceneManager.LoadSceneAsync(sceneName);
         //transitionAnim.SetTrigger("Start");
     }
 }

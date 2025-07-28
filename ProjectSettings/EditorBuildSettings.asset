@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9365409c17b92a04bbcdc7005857ca17
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pause&Cutscene.unity
     guid: 274c31fcbeaea74408204268f63a868f
   m_configObjects: {}

@@ -161,7 +161,7 @@ public class MainMenu : MonoBehaviour
     {
         CutScene_FadeIn();
         yield return new WaitForSeconds(2);
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync("MainMenu");
         yield return new WaitForSeconds(2);
         Trasition.SetActive(false);
     }
@@ -169,7 +169,7 @@ public class MainMenu : MonoBehaviour
     {
         CutScene_FadeIn();
         yield return new WaitForSeconds(2);
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync("SampleScene");
         yield return new WaitForSeconds(2);
         Trasition.SetActive(false);
     }
