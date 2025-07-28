@@ -17,4 +17,34 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Pause&Cutscene.unity
     guid: 274c31fcbeaea74408204268f63a868f
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/AxeEnding.unity
+    guid: 8e03946964d16914386c018b28fee365
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/PodcastEnding.unity
+    guid: b7d4e964d6ffc0b4eabdc586ef729dcc
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/DollEnding.unity
+    guid: 4629096b5121cc04eb28ab91bbfebb42
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/SewEnding.unity
+    guid: 0153550fe17392d4e8c5d9f358e6d7b6
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/Flower.unity
+    guid: b969fc5e665ffc74d9e4d93976376d7a
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/LoveBugEnding.unity
+    guid: 3e3aa4c8ef119c34c9bee64504baccd0
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/PadlockEnding.unity
+    guid: 97540ea0f8fa07a4b949826ca050bb2a
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/NotepadEnding.unity
+    guid: 86bd21021a55e5c43abb695c8beb2c36
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/AFKEnding.unity
+    guid: ea5c5a38c70363d4784a2d1cc86681e9
+  - enabled: 1
+    path: Assets/Cutscenes/Endings/LunchEnding.unity
+    guid: 7fb23ec22084c9c47861674d22ff6dd2
   m_configObjects: {}
