@@ -157,10 +157,16 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadScene()
     {
-        StartCoroutine(delayScene02());
+        StartCoroutine(StartScene101());
         
     }
-   
+    IEnumerator StartScene101()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Intro");
+    }
+
     IEnumerator delayScene00()
     {
         CutScene_FadeIn();

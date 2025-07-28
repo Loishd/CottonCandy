@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cutscenes/Endings/LunchEnding.unity
     guid: 7fb23ec22084c9c47861674d22ff6dd2
+  - enabled: 1
+    path: Assets/Cutscenes/Intro.unity
+    guid: ab6ccf171b4db394f8328d404b6ae015
   m_configObjects: {}
