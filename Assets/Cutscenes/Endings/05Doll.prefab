@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1551566759808947151}
   - component: {fileID: 4814745064472039089}
   m_Layer: 0
-  m_Name: 1005Doll
+  m_Name: 605Doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6060803750725561296}
   - component: {fileID: 8821103072481464620}
   m_Layer: 0
-  m_Name: 705Doll
+  m_Name: 805Doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 6392269539951958282}
   - component: {fileID: 7426659908516273668}
   m_Layer: 0
-  m_Name: 605Doll
+  m_Name: 705Doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 6563450538647168672}
   - component: {fileID: 2152431461661326978}
   m_Layer: 0
-  m_Name: 90502Doll
+  m_Name: 1005Doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 3815593410694393390}
   - component: {fileID: 4142239921285478899}
   m_Layer: 0
-  m_Name: 805Doll
+  m_Name: 905Doll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,11 +703,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8236369410696961263}
   - {fileID: 2053700091300277821}
   - {fileID: 7736405851034732902}
   - {fileID: 6192201406343959344}
   - {fileID: 468548217070713811}
+  - {fileID: 8236369410696961263}
   - {fileID: 6282803634287033090}
   - {fileID: 7565786983249571529}
   - {fileID: 3075249354537656564}
