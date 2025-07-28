@@ -226,6 +226,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4055177194182886165, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4469405694753240444, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
@@ -2078,7 +2082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1093551361
 MonoBehaviour:
   m_ObjectHideFlags: 0
