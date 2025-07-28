@@ -343,6 +343,7 @@ MonoBehaviour:
   fadeInDirector: {fileID: 43069191}
   fadeOutDirector: {fileID: 2100043691}
   Trasition: {fileID: 1898017104}
+  PausedScreen: {fileID: 0}
   pannel: {fileID: 0}
   GalleryTab: {fileID: 0}
   CreditTab: {fileID: 0}
@@ -4649,7 +4650,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &180717578
 GameObject:
   m_ObjectHideFlags: 0
@@ -5388,7 +5389,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!50 &200394837
 Rigidbody2D:
   serializedVersion: 4
@@ -7585,7 +7586,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &286933772
 GameObject:
   m_ObjectHideFlags: 0
@@ -14724,7 +14725,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &538665213
 GameObject:
   m_ObjectHideFlags: 0
@@ -15808,7 +15809,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &584419470
 GameObject:
   m_ObjectHideFlags: 0
@@ -16322,9 +16323,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: 2033978927
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c56e561af421f6c4d86bc023a2023edc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17793,7 +17794,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &662262478
 GameObject:
   m_ObjectHideFlags: 0
@@ -20010,7 +20011,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &748723859
 GameObject:
   m_ObjectHideFlags: 0
@@ -21086,7 +21087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPicker: {fileID: 1388736359}
   itemprogresser: {fileID: 1388736359}
-  itemType: {fileID: 538665213}
+  itemType: {fileID: 418468405}
   canInteractItem: 0
   it: {fileID: 11400000, guid: 66a78f91cf478624ca636dc57348868b, type: 2}
 --- !u!1 &788686209
@@ -21399,7 +21400,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &806719722
 GameObject:
   m_ObjectHideFlags: 0
@@ -27393,7 +27394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
       propertyPath: m_InitialState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30288,7 +30289,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1152927411
 GameObject:
   m_ObjectHideFlags: 0
@@ -32249,6 +32250,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!320 &1243049132 stripped
+PlayableDirector:
+  m_CorrespondingSourceObject: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  m_PrefabInstance: {fileID: 1019555839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1244991177
 GameObject:
   m_ObjectHideFlags: 0
@@ -33987,7 +33993,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1308656409
 GameObject:
   m_ObjectHideFlags: 0
@@ -35216,7 +35222,7 @@ MonoBehaviour:
   MusicSource: {fileID: 0}
   SFXSource: {fileID: 0}
   background: {fileID: 0}
-  timer: 600
+  timer: 300
   _pausedScreen: {fileID: 0}
 --- !u!4 &1353955210
 Transform:
@@ -36780,7 +36786,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1408924304
 GameObject:
   m_ObjectHideFlags: 0
@@ -42096,7 +42102,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1643022056
 GameObject:
   m_ObjectHideFlags: 0
@@ -43569,7 +43575,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1690294133
 GameObject:
   m_ObjectHideFlags: 0
@@ -49318,7 +49324,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1913095782
 GameObject:
   m_ObjectHideFlags: 0
@@ -51256,7 +51262,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1993114308
 GameObject:
   m_ObjectHideFlags: 0
@@ -51598,7 +51604,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &1999529953
 GameObject:
   m_ObjectHideFlags: 0
@@ -52090,7 +52096,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.50127876}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -52101,7 +52107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.3426943}
   m_EdgeRadius: 0
 --- !u!1 &2010729140
 GameObject:
@@ -52358,7 +52364,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &2019656225
 GameObject:
   m_ObjectHideFlags: 0
@@ -53014,7 +53020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPicker: {fileID: 1388736359}
   itemprogresser: {fileID: 1388736359}
-  itemType: {fileID: 64672169}
+  itemType: {fileID: 296241491}
   canInteractItem: 0
   it: {fileID: 11400000, guid: cc341f1d5bc2df143aef55c9524f0c4c, type: 2}
 --- !u!1 &2028536009
@@ -54592,7 +54598,7 @@ MonoBehaviour:
   itemPicker: {fileID: 1388736359}
   canInteractItem: 0
   itf: {fileID: 11400000, guid: e16036a9db66c1947bc7ddb4d01e6690, type: 2}
-  FishJumpScare: {fileID: 6645886810378873833, guid: 14680ed4acdba1048b3a105734fccf73, type: 3}
+  FishJumpScare: {fileID: 1243049132}
 --- !u!1 &2125078840
 GameObject:
   m_ObjectHideFlags: 0

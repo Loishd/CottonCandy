@@ -27,10 +27,9 @@ public class fishInteraction : MonoBehaviour
     }
     public void FishJumpScare01()
     {
-        FishJumpScare.time=0;
-        FishJumpScare.Play();
-
+        FishJumpScare.gameObject.SetActive(false);
         print(FishJumpScare.state);
+        FishJumpScare.gameObject.SetActive(true);
     }
     
 
@@ -44,7 +43,6 @@ public class fishInteraction : MonoBehaviour
                 if (itemPicker.pickupitemstatus == false)
                 {
                     FishJumpScare01();
-                    //[                                ]//////////// ADD FISHING CUTSCENE HERE
                     PlayerStatus.instance.addItem(itf);
                     itemPicker.pickupitemstatus = true;
                 }

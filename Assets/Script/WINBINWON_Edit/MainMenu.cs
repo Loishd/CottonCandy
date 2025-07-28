@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
     public PlayableDirector fadeInDirector;
     public PlayableDirector fadeOutDirector;
     public GameObject Trasition;
+    public GameObject PausedScreen;
     private void Awake()
     {
 
@@ -67,6 +68,16 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void PrepareQuit()
+    {
+        PausedScreen.SetActive(true);
+    }
+
+    public void PrepareStay()
+    {
+        PausedScreen.SetActive(false);
     }
 
     public void UpdateMusicVolume(float volume)
