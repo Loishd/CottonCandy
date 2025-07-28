@@ -43,7 +43,7 @@ public class ButterflyCheckProgress : MonoBehaviour
     {
         MainMenu.instance.CutScene_FadeIn();
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("PadlockEnding");
+        SceneManager.LoadScene("LoveBugEnding");
     }
 
     void Update()
@@ -161,7 +161,7 @@ public class ButterflyCheckProgress : MonoBehaviour
 
             else if (PlayerStatus.instance.checkItem(itemFlower))
             {
-                LoveBugEndingInDelay();
+                StartCoroutine(LoveBugEndingInDelay());
                 Debug.Log("Insert Butterfly Cutscene Here");
                 PlayerPrefs.SetInt("Ending6", 1);
             }

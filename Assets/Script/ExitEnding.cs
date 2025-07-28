@@ -26,7 +26,7 @@ public class ExitEnding : MonoBehaviour
             {
                 Debug.Log("Insert Exit Job Ending!");
                 PlayerPrefs.SetInt("Ending7", 1);
-                PadlockEndingInDelay();
+                StartCoroutine(PadlockEndingInDelay());
             }
         }
     }

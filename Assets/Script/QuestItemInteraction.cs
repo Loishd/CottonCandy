@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestItemInteraction : MonoBehaviour
 {
@@ -17,7 +18,13 @@ public class QuestItemInteraction : MonoBehaviour
         itemType.SetActive(false);
     }
 
-    
+    IEnumerator PodcastEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PodcastEnding");
+    }
+
     void Update()
     {
         
@@ -27,6 +34,7 @@ public class QuestItemInteraction : MonoBehaviour
             {
                 Debug.Log("Run the Colin Ending");
                 PlayerPrefs.SetInt("Ending2", 1);
+                StartCoroutine(PodcastEndingInDelay());
             }
             else
             {

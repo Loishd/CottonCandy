@@ -88,27 +88,31 @@ public class AreaInteraction : MonoBehaviour
             {
                 Debug.Log("FlowerStudent Cutscene");
                 PlayerPrefs.SetInt("Ending5", 1);
-                SceneManager.LoadScene(2);
+                StartCoroutine(FlowerStudentInDelay());
             }
             else if (PlayerStatus.instance.checkItem(foodStudentEnding))
             {
                 Debug.Log("FoodEnding Cutscene");
                 PlayerPrefs.SetInt("Ending9", 1);
+                StartCoroutine(FoodEndingInDelay());
             }
             else if (PlayerStatus.instance.checkItem(sewkitStudentEnding))
             {
                 Debug.Log("sewkitStudent");
                 PlayerPrefs.SetInt("Ending4", 1);
+                StartCoroutine(sewkitStudentInDelay());
             }
             else if (PlayerStatus.instance.checkItem(dollQuestEnding))
             {
                 Debug.Log("dollEnding");
                 PlayerPrefs.SetInt("Ending3", 1);
+                StartCoroutine(dollEndingInDelay());
             }
             else if (PlayerStatus.instance.checkItem(notepadEnding))
             {
                 Debug.Log("sketchNotepadEnding");
                 PlayerPrefs.SetInt("Ending8", 1);
+                StartCoroutine(sketchNotepadEndingInDelay());
             }
             else
             {
