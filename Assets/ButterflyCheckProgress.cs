@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButterflyCheckProgress : MonoBehaviour
 {
@@ -38,7 +39,12 @@ public class ButterflyCheckProgress : MonoBehaviour
     {
         
     }
-
+    IEnumerator LoveBugEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PadlockEnding");
+    }
 
     void Update()
     {
@@ -155,6 +161,7 @@ public class ButterflyCheckProgress : MonoBehaviour
 
             else if (PlayerStatus.instance.checkItem(itemFlower))
             {
+                LoveBugEndingInDelay();
                 Debug.Log("Insert Butterfly Cutscene Here");
                 PlayerPrefs.SetInt("Ending6", 1);
             }

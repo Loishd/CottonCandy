@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 1
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -22001,11 +22001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1401496595107867872, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.109192
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1401496595107867872, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.911194
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1401496595107867872, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22023,6 +22023,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2529557887129849891, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].value
+      value: 
+      objectReference: {fileID: 1410844694}
     - target: {fileID: 2567512154216344197, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -36505,6 +36509,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1410844694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1123543499696251641, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+  m_PrefabInstance: {fileID: 831020900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1413380559
 GameObject:
   m_ObjectHideFlags: 0

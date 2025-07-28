@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitEnding : MonoBehaviour
 {
@@ -8,6 +9,13 @@ public class ExitEnding : MonoBehaviour
     void Start()
     {
         canExit = false;
+    }
+
+    IEnumerator PadlockEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PadlockEnding");
     }
 
     void Update()
@@ -18,6 +26,7 @@ public class ExitEnding : MonoBehaviour
             {
                 Debug.Log("Insert Exit Job Ending!");
                 PlayerPrefs.SetInt("Ending7", 1);
+                PadlockEndingInDelay();
             }
         }
     }
