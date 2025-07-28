@@ -120,9 +120,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenuScene, Assembly-CSharp
-        m_MethodName: Scene_MainMenu
+      - m_Target: {fileID: 6553974895317182183}
+        m_TargetAssemblyTypeName: SceneController2, Assembly-CSharp
+        m_MethodName: NextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -563,6 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4267252074406862785}
   - component: {fileID: 1281566210203476330}
+  - component: {fileID: 6553974895317182183}
   - component: {fileID: 7100690400988732427}
   m_Layer: 0
   m_Name: SceneManager
@@ -599,8 +600,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 4084501188611464410}
-  sceneNumber: 2
-  sceneName: 
+  sceneNumber: 1
+  sceneName: SampleScene
+--- !u!114 &6553974895317182183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4055177194182886165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f539d4fbd772f74d9b430a1bb27cb28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 4084501188611464410}
+  sceneNumber: 0
+  sceneName: MainMenu
 --- !u!114 &7100690400988732427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +624,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4055177194182886165}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94854d8137188a14ba5bb0acbf4d0b86, type: 3}
   m_Name: 

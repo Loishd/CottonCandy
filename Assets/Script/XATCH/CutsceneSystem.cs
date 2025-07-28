@@ -14,7 +14,7 @@ public class CutsceneSystem : MonoBehaviour
     [SerializeField] int holdSec;
     int currentImage = 0;
     bool start = true;
-    private bool isInputEnabled = true;
+    public bool isInputEnabled = true;
     //PlayerInput input = new PlayerInput();
 
     public GameObject[] sceneImg;
