@@ -3,7 +3,16 @@ guid: c730168b1ce0b924ab987253631b7214
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audioMixer: {fileID: 24100000, guid: d2d39b9eccd1eb2449b049b50ac81de9, type: 2}
+  - musicSlider: {instanceID: 0}
+  - sfxSlider: {instanceID: 0}
+  - fadeInDirector: {instanceID: 0}
+  - fadeOutDirector: {instanceID: 0}
+  - Trasition: {instanceID: 0}
+  - pannel: {instanceID: 0}
+  - GalleryTab: {instanceID: 0}
+  - CreditTab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

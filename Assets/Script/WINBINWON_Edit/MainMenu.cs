@@ -1,10 +1,11 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Collections;
-
+[Serializable]
 public class MainMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
@@ -19,14 +20,11 @@ public class MainMenu : MonoBehaviour
     }
     private void Start()
     {
-        
         CutScene_FadeOut();
         Play();
         LoadVolume();
         /*MusicManager.Instance.PlayMusic("MusicSource");*/
-     
-
-    }
+ }
     
     private void Update()
     {
