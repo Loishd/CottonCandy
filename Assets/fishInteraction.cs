@@ -21,14 +21,16 @@ public class fishInteraction : MonoBehaviour
 
         /*MainMenu.instance.CutScene_FadeIn();*/
         yield return new WaitForSeconds(0.1f);
+
         FishJumpScare.Play();
 
     }
     public void FishJumpScare01()
     {
-        StartCoroutine(FishingDelay());
-        
-        print("1");
+        FishJumpScare.time=0;
+        FishJumpScare.Play();
+
+        print(FishJumpScare.state);
     }
     
 
