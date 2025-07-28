@@ -8,6 +8,9 @@ using UnityEngine.UI;
 [Serializable]
 public class MainMenu : MonoBehaviour
 {
+
+    private static MainMenu _instance;
+    public static MainMenu instance => _instance;
     public AudioMixer audioMixer;
     public Slider musicSlider;
     public Slider sfxSlider;
@@ -16,7 +19,16 @@ public class MainMenu : MonoBehaviour
     public GameObject Trasition;
     private void Awake()
     {
+
         Trasition.SetActive(true);
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
     }
     private void Start()
     {
@@ -151,7 +163,7 @@ public class MainMenu : MonoBehaviour
    
     IEnumerator delayScene00()
     {
-        CutScene_FadeIn(); 
+        CutScene_FadeIn();
         yield return new WaitForSeconds(2); 
         SceneManager.LoadSceneAsync(2);
         yield return new WaitForSeconds(2);

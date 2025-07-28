@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AreaInteraction : MonoBehaviour
 {
@@ -34,7 +35,43 @@ public class AreaInteraction : MonoBehaviour
         
     }
 
-    
+    IEnumerator AxeEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("AxeEnding");
+    }
+    IEnumerator FlowerStudentInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Flower");
+    }
+    IEnumerator FoodEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("LunchEnding");
+    }
+    IEnumerator sewkitStudentInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("SewEnding");
+    }
+    IEnumerator dollEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("DollEnding");
+    }
+
+    IEnumerator sketchNotepadEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("NotepadEnding");
+    }
     void Update()
     {
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
@@ -43,17 +80,21 @@ public class AreaInteraction : MonoBehaviour
             {
                 Debug.Log("Axe Cutscene");
                 PlayerPrefs.SetInt("Ending1", 1);
+                StartCoroutine(AxeEndingInDelay());
+             
+
             }
             else if (PlayerStatus.instance.checkItem(flowerStudentEnding))
             {
                 Debug.Log("FlowerStudent Cutscene");
                 PlayerPrefs.SetInt("Ending5", 1);
+                SceneManager.LoadScene(2);
             }
             else if (PlayerStatus.instance.checkItem(foodStudentEnding))
             {
                 Debug.Log("FoodEnding Cutscene");
                 PlayerPrefs.SetInt("Ending9", 1);
-            }           
+            }
             else if (PlayerStatus.instance.checkItem(sewkitStudentEnding))
             {
                 Debug.Log("sewkitStudent");
