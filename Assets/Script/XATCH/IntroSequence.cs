@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class CutsceneSystem : MonoBehaviour
+public class IntroSequence : MonoBehaviour
 {
     public static CutsceneSystem instance;
     [SerializeField] Animator curtain;
-    [SerializeField] Animator buttons;
-    [SerializeField] public GameObject _frame;
-    [SerializeField] public GameObject _endFrame;
+    //[SerializeField] Animator buttons;
+    //[SerializeField] public GameObject _frame;
+    //[SerializeField] public GameObject _endFrame;
+    [SerializeField] string sceneName;
     [SerializeField] int holdSec;
     int currentImage = 0;
     bool start = true;
@@ -44,12 +44,21 @@ public class CutsceneSystem : MonoBehaviour
         }
         if (currentImage >= sceneImg.Length - 1)
         {
-            _frame.gameObject.SetActive(false);
-            buttons.SetTrigger("Rise");
-            _endFrame.gameObject.SetActive(true);
+            if (Input.GetMouseButtonDown(0))
+            {
+                {
+                    StartCoroutine(LoadScene());
+                }
+            }
         }
     }
-
+    IEnumerator LoadScene()
+    {
+        curtain.SetTrigger("Drop");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(sceneName);
+        //transitionAnim.SetTrigger("Start");
+    }
     IEnumerator LoadImage()
     {
         curtain.SetTrigger("Drop");
