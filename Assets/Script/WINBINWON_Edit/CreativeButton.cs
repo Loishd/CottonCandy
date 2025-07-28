@@ -11,7 +11,7 @@ public class CreativeButton : MonoBehaviour
         if (img == null)
         {
             Debug.LogError("no img" + gameObject.name);
-            
+
         }
         else
         {
@@ -20,7 +20,7 @@ public class CreativeButton : MonoBehaviour
     }
     void Awake()
     {
-
+        
     }                              
 
     

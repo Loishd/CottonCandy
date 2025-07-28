@@ -156,6 +156,7 @@ public class ButterflyCheckProgress : MonoBehaviour
             else if (PlayerStatus.instance.checkItem(itemFlower))
             {
                 Debug.Log("Insert Butterfly Cutscene Here");
+                PlayerPrefs.SetInt("Ending6", 1);
             }
 
             else
