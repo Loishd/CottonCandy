@@ -6,21 +6,21 @@ using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class ControllerCutScene : MonoBehaviour
 {
-    [Range(1, 5)] public float Delay_num = 2f;
+    [Range(1, 5)] public float Delay_num = 3f;
     public int Num = 0;
     public GameObject[] Frame;
     public PlayableDirector DropDirector;
-    public PlayableDirector LiftDirector;
+    public PlayableDirector LiftDirector;                   
     void Start()
     {
+        foreach (var frame in Frame)
+        {
+            frame.SetActive(true);
+        }
         LiftCurtain();
     }
     void Update() 
     {
-        foreach (var frame in Frame)
-        {
-            frame.SetActive(false);
-        }
 
     }
     public void NextFrame()
@@ -28,10 +28,10 @@ public class ControllerCutScene : MonoBehaviour
         if (Frame.Length > 0)
         {
             StartCoroutine(Delay01(Delay_num));
-            Frame[Num].SetActive(true);
+            Frame[Num].SetActive(false);
             print(Num);
-            Num += 1;
-            Frame[Num - 2].SetActive(false);
+            Num += 1;/*
+            Frame[Num - 2].SetActive(false);*/
             return;
         }
     }
