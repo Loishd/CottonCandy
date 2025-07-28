@@ -43,7 +43,7 @@ public class ButterflyCheckProgress : MonoBehaviour
     {
         MainMenu.instance.CutScene_FadeIn();
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("PadlockEnding");
+        SceneManager.LoadScene("LoveBugEnding");
     }
 
     void Update()
