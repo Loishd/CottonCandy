@@ -796,6 +796,46 @@ PrefabInstance:
       propertyPath: sceneImg.Array.data[5]
       value: 
       objectReference: {fileID: 774530707}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[0].image
+      value: 
+      objectReference: {fileID: 500810149}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[1].image
+      value: 
+      objectReference: {fileID: 1580763827}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[2].image
+      value: 
+      objectReference: {fileID: 653992628}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[3].image
+      value: 
+      objectReference: {fileID: 2000098777}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[4].image
+      value: 
+      objectReference: {fileID: 83804576}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[5].image
+      value: 
+      objectReference: {fileID: 774530707}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[0].dontDropCurtain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[1].dontDropCurtain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[2].dontDropCurtain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100690400988732427, guid: 78e952b4ccf1ec14980ddbe6007da1a7, type: 3}
+      propertyPath: sceneImg.Array.data[3].dontDropCurtain
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

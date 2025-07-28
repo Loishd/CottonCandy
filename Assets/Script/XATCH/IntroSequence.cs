@@ -1,8 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+[Serializable]
+public struct IntroDontDropCurtain
+{
+    public GameObject image;
+    public bool dontDropCurtain;
+}
 public class IntroSequence : MonoBehaviour
 {
     public static CutsceneSystem instance;
@@ -17,7 +25,7 @@ public class IntroSequence : MonoBehaviour
     public bool isInputEnabled = true;
     //PlayerInput input = new PlayerInput();
 
-    public GameObject[] sceneImg;
+    public IntroDontDropCurtain[] sceneImg;
 
     void Start()
     {
@@ -61,18 +69,39 @@ public class IntroSequence : MonoBehaviour
     }
     IEnumerator LoadImage()
     {
-        curtain.SetTrigger("Drop");
-        isInputEnabled = false;
-        yield return new WaitForSeconds(holdSec);
-        for (int i = 0; i < sceneImg.Length; i++)
+        if (sceneImg[currentImage].dontDropCurtain == false)
         {
-            sceneImg[i].gameObject.SetActive(false);
+            curtain.SetTrigger("Drop");
         }
+
+        isInputEnabled = false;
+
+
+        if (sceneImg[currentImage].dontDropCurtain == false)
+        {
+            yield return new WaitForSeconds(holdSec);
+        }
+
+
+            for (int i = 0; i < sceneImg.Length; i++)
+        {
+            sceneImg[i].image.gameObject.SetActive(false);
+        }
+
         currentImage++;
-        sceneImg[currentImage].gameObject.SetActive(true);
+        sceneImg[currentImage].image.gameObject.SetActive(true);
         //SceneManager.LoadSceneAsync(sceneNumber);
-        curtain.SetTrigger("Lift");
-        yield return new WaitForSeconds(1);
+
+        if (sceneImg[currentImage - 1].dontDropCurtain == false)
+        {
+            curtain.SetTrigger("Lift");
+        }
+
+        if (sceneImg[currentImage].dontDropCurtain == false)
+        {
+            yield return new WaitForSeconds(1);
+        }
+
         isInputEnabled = true;
     }
 }
