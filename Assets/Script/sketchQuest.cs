@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class sketchQuest : MonoBehaviour
     public GameObject NPCPanel1;
     public DialogueSystem dialogue3;
     public GameObject NPCPanel3;
-
+    
     void Update()
     {
         
@@ -27,6 +28,7 @@ public class sketchQuest : MonoBehaviour
                         NPCPanel3.SetActive(true); //show dialogue
                         dialogue3.StartDialogue(); //run the dialogue
                         PlayerStatus.instance.isDialogue = true;
+                       
                     }
 
                     PlayerStatus.instance.itembag.RemoveAt(0);
@@ -43,15 +45,18 @@ public class sketchQuest : MonoBehaviour
                         PlayerStatus.instance.addItem(item);
                         PlayerStatus.instance.pickupitemstatus = true;
                         Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest12);
-                    if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                    }
+                    if (PlayerStatus.instance.checkItem(item))
+                    {
+                        if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                         {
-
                             dialogue1.textComponent.text = string.Empty; //reset dialogue
                             NPCPanel1.SetActive(true); //show dialogue
                             dialogue1.StartDialogue(); //run the dialogue   
                             PlayerStatus.instance.isDialogue = true;
                         }
                     }
+                    
                 }
             }
     }
@@ -80,6 +85,11 @@ public class sketchQuest : MonoBehaviour
             PlayerStatus.instance.isDialogue = false;
             CharacterImagine.Instance.closeCharacterImage();
         }
+
+    }
+
+    public static void LastIndexOf(Array array)
+    {
 
     }
 

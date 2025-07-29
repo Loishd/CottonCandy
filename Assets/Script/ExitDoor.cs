@@ -10,6 +10,8 @@ public class ExitDoor : MonoBehaviour
     public GameObject Barrier;
     public GameObject Tony;
     public GameObject Charlie;
+    public GameObject TonyPost;
+    public GameObject CharliePost;
     public GameObject bar1;
     public GameObject bar2;
 
@@ -25,8 +27,12 @@ public class ExitDoor : MonoBehaviour
     {
         if (PlayerStatus.instance.sketchFlowerSuccessfully == true) 
         {
-            Tony.transform.position = new Vector3(5.91f, -20.59f, 0.038f);
+            Tony.transform.position = new Vector3(13f, 0f, 0.071f);
             Charlie.transform.position = new Vector3(-13.37f, -20.45f, 0.038f);
+            Tony.SetActive(false);
+            Charlie.SetActive(false);
+            TonyPost.SetActive(true);
+            CharliePost.SetActive(true);
             bar1.SetActive(true);
             bar2.SetActive(true);
 

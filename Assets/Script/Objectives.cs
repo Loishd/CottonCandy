@@ -65,7 +65,7 @@ public class Objectives : MonoBehaviour
 
             else if (cq == CurrentQuest.Quest3)
             {
-                questText.text = "Do something for Steak";
+                questText.text = "Do something for Terry";
             }
 
             else if (cq == CurrentQuest.Quest4)
@@ -100,7 +100,7 @@ public class Objectives : MonoBehaviour
 
             else if (cq == CurrentQuest.Quest10)
             {
-                questText.text = "Find some ingredients for Steak";
+                questText.text = "Find some ingredients for Terry";
             }
 
             else if (cq == CurrentQuest.Quest11)

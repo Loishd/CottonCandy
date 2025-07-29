@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
     public AudioSource background;
     public float timer = 300f;
-    
+
 
     private static GameManager _instance;
     public static GameManager instance => _instance;
@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator AFKEndingInDelay()
     {
+  
         MainMenu.instance.CutScene_FadeIn();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("AFKEnding");
@@ -39,20 +40,24 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CountdownCoroutine(timer));  
+        StartCoroutine(CountdownCoroutine(timer));
     }
 
     IEnumerator CountdownCoroutine(float time)
     {
+
         yield return new WaitForSeconds(time);
-        Debug.Log("Insert AFK ending here");
-        PlayerPrefs.SetInt("Ending10", 1);
-        StartCoroutine(AFKEndingInDelay());
-    }
+        if (PlayerStatus.instance.acceptColinQuest != true)
+        {
+            PlayerPrefs.SetInt("Ending10", 1);
+            StartCoroutine(AFKEndingInDelay());
+        }
+    }   
+}
 
 
 
   
     
 
-}
+

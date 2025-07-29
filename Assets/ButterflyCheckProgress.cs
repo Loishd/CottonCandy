@@ -50,7 +50,14 @@ public class ButterflyCheckProgress : MonoBehaviour
     {
         if (canInteract == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (PlayerStatus.instance.acceptDollQuest == true)
+            if (PlayerStatus.instance.checkItem(itemFlower))
+            {
+                StartCoroutine(LoveBugEndingInDelay());
+                Debug.Log("Insert Butterfly Cutscene Here");
+                PlayerPrefs.SetInt("Ending6", 1);
+            }
+
+            else if (PlayerStatus.instance.acceptDollQuest == true && !PlayerStatus.instance.checkItem(itemDoll))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -157,13 +164,6 @@ public class ButterflyCheckProgress : MonoBehaviour
                     dialogue10.StartDialogue(); //run the dialogue
                     PlayerStatus.instance.isDialogue = true;
                 }
-            }
-
-            else if (PlayerStatus.instance.checkItem(itemFlower))
-            {
-                StartCoroutine(LoveBugEndingInDelay());
-                Debug.Log("Insert Butterfly Cutscene Here");
-                PlayerPrefs.SetInt("Ending6", 1);
             }
 
             else
