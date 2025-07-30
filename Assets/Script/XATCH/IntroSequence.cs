@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public struct IntroDontDropCurtain
 {
     public GameObject image;
+    public GameObject subtitle;
     public bool dontDropCurtain;
 }
 public class IntroSequence : MonoBehaviour
@@ -31,6 +32,15 @@ public class IntroSequence : MonoBehaviour
     {
         curtain.SetTrigger("Lift");
         start = false;
+
+        for (int i = 0; i < sceneImg.Length; i++)
+        {
+            sceneImg[i].image.gameObject.SetActive(false);
+            sceneImg[i].subtitle.gameObject.SetActive(false);
+        }
+
+        sceneImg[currentImage].image.gameObject.SetActive(true);
+        sceneImg[currentImage].subtitle.gameObject.SetActive(true);
     }
 
     void Update()
@@ -72,33 +82,25 @@ public class IntroSequence : MonoBehaviour
         if (sceneImg[currentImage].dontDropCurtain == false)
         {
             curtain.SetTrigger("Drop");
-        }
-
-        isInputEnabled = false;
-
-
-        if (sceneImg[currentImage].dontDropCurtain == false)
-        {
+            isInputEnabled = false;
             yield return new WaitForSeconds(holdSec);
         }
 
 
-            for (int i = 0; i < sceneImg.Length; i++)
+        for (int i = 0; i < sceneImg.Length; i++)
         {
             sceneImg[i].image.gameObject.SetActive(false);
+            sceneImg[i].subtitle.gameObject.SetActive(false);
         }
 
         currentImage++;
         sceneImg[currentImage].image.gameObject.SetActive(true);
+        sceneImg[currentImage].subtitle.gameObject.SetActive(true);
         //SceneManager.LoadSceneAsync(sceneNumber);
 
         if (sceneImg[currentImage - 1].dontDropCurtain == false)
         {
             curtain.SetTrigger("Lift");
-        }
-
-        if (sceneImg[currentImage].dontDropCurtain == false)
-        {
             yield return new WaitForSeconds(1);
         }
 
