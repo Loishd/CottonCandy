@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource MusicSource;
     [SerializeField] AudioSource SFXSource;
     public AudioSource background;
-    public float timer = 300f;
+    public float timer = 450f;
 
 
     private static GameManager _instance;
@@ -45,13 +45,14 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CountdownCoroutine(float time)
     {
-
         yield return new WaitForSeconds(time);
-        if (PlayerStatus.instance.acceptColinQuest != true)
+
+        if (PlayerStatus.instance.isDialogue == false && PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.sketchFlowerSuccessfully == false)
         {
             PlayerPrefs.SetInt("Ending10", 1);
             StartCoroutine(AFKEndingInDelay());
         }
+        
     }   
 }
 
