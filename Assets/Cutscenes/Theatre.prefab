@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 6313225486983274880}
   - component: {fileID: 1744974768136557403}
   - component: {fileID: 6036996128611796135}
-  - component: {fileID: 9182425633130583435}
   - component: {fileID: 5392238785767038087}
   m_Layer: 5
   m_Name: Frame
@@ -270,18 +269,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &9182425633130583435
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123543499696251641}
-  m_Enabled: 0
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 1
 --- !u!95 &5392238785767038087
 Animator:
   serializedVersion: 5
@@ -636,9 +623,15 @@ MonoBehaviour:
   holdSec: 1
   isInputEnabled: 1
   sceneImg:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - image: {fileID: 0}
+    subtitle: {fileID: 0}
+    dontDropCurtain: 0
+  - image: {fileID: 0}
+    subtitle: {fileID: 0}
+    dontDropCurtain: 0
+  - image: {fileID: 0}
+    subtitle: {fileID: 0}
+    dontDropCurtain: 0
 --- !u!1 &5752937143656992105
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +885,6 @@ GameObject:
   - component: {fileID: 8764954449681670617}
   - component: {fileID: 5487197416614239894}
   - component: {fileID: 4469405694753240444}
-  - component: {fileID: 6269539809842141797}
   - component: {fileID: 6023069916689635976}
   m_Layer: 5
   m_Name: CurtainSide
@@ -958,18 +950,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!225 &6269539809842141797
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7734752313135362947}
-  m_Enabled: 0
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!95 &6023069916689635976
 Animator:
   serializedVersion: 5
