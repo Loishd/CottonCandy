@@ -20,7 +20,7 @@ public class TentQuest : MonoBehaviour
     {
         if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (PlayerStatus.instance.foundSpeaker == false)
+            if (PlayerStatus.instance.foundSpeaker == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.acceptDollQuest == false)
             {
                 PlayerStatus.instance.foundSpeaker = true;
                 itemType.SetActive(true);

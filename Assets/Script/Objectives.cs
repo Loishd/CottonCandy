@@ -9,7 +9,7 @@ public class Objectives : MonoBehaviour
     private static Objectives _instance;
     public static Objectives instance => _instance;
 
-    public enum CurrentQuest {NoActiveQuest, Quest1, Quest2, Quest3, Quest4, Quest5, Quest6, Quest7, Quest8, Quest9, Quest10, Quest11, Quest12};
+    public enum CurrentQuest {NoActiveQuest, Quest1, Quest2, Quest3, Quest4, Quest5, Quest6, Quest7, Quest8, Quest9, Quest10, Quest11, Quest12, QuestFix};
     public CurrentQuest cq;
     public TextMeshProUGUI questText;
         
@@ -111,6 +111,11 @@ public class Objectives : MonoBehaviour
             else if (cq == CurrentQuest.Quest12)
             {
                 questText.text = "Give it to someone";
+            }
+
+            else if (cq == CurrentQuest.QuestFix)
+            {
+                questText.text = "Find one more thing!";
             }
         }
     }

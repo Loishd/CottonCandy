@@ -50,6 +50,11 @@ public class ItemInteraction : MonoBehaviour
                     {
                         Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest8);
                     }
+
+                    else if (it.itemName == "Needle" || it.itemName == "Thread")
+                    {
+                        Objectives.instance.SetQuest(Objectives.CurrentQuest.QuestFix);
+                    }
                 }
             }
 

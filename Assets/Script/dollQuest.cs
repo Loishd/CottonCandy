@@ -18,7 +18,7 @@ public class dollQuest : MonoBehaviour
     {
         if (canInteractItem == true && Input.GetKeyDown(KeyCode.E)) //press E to run ts
         {
-            if (PlayerStatus.instance.acceptDollQuest == false)
+            if (PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptSteakQuest == false)
             {
                 if (PlayerStatus.instance.itembag.Count == 0)
                 {
