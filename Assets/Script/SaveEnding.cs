@@ -32,6 +32,7 @@ public class SaveEnding : MonoBehaviour
             PlayerPrefs.SetInt("Ending8", 0);
             PlayerPrefs.SetInt("Ending9", 0);
             PlayerPrefs.SetInt("Ending10", 0);
+
             // Mark as launched
             PlayerPrefs.SetInt("HasLaunchedBefore", 1);
             PlayerPrefs.Save(); // Optional but good practice to save right away
@@ -130,6 +131,5 @@ public class SaveEnding : MonoBehaviour
         {
             afkBadge.color = new Color(1f, 1f, 1f, 1f);
         }
-
     }
 }

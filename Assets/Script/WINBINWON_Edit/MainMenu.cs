@@ -72,12 +72,19 @@ public class MainMenu : MonoBehaviour
 
     public void PrepareQuit()
     {
-        PausedScreen.SetActive(true);
+        if (TabBoolean == false)
+        {
+            PausedScreen.SetActive(true);
+            TabBoolean = true;
+            return;
+        }
     }
 
     public void PrepareStay()
     {
         PausedScreen.SetActive(false);
+        TabBoolean = false;
+        return;
     }
 
     public void UpdateMusicVolume(float volume)

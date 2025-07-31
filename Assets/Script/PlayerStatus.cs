@@ -19,6 +19,7 @@ public class PlayerStatus : MonoBehaviour
     public bool colinQuestsuccessfully;
     public bool sketchFlowerSuccessfully;
     public bool triedToExit;
+    public bool loopDialogueB;
 
     //ALL ENDING
     

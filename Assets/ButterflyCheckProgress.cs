@@ -28,6 +28,8 @@ public class ButterflyCheckProgress : MonoBehaviour
     public GameObject NPCPanel9;
     public DialogueSystem dialogue10;
     public GameObject NPCPanel10;
+    public DialogueSystem dialogueloop;
+    public GameObject NPCPanelloop;
 
     public ItemQuest itemDoll;
     public ItemQuest itemAxe;
@@ -55,6 +57,18 @@ public class ButterflyCheckProgress : MonoBehaviour
                 StartCoroutine(LoveBugEndingInDelay());
                 Debug.Log("Insert Butterfly Cutscene Here");
                 PlayerPrefs.SetInt("Ending6", 1);
+            }
+
+            else if (PlayerStatus.instance.loopDialogueB == true)
+            {
+                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                {
+                    dialogueloop.textComponent.text = string.Empty; //reset dialogue
+                    NPCPanelloop.SetActive(true); //show dialogue
+                    dialogueloop.StartDialogue(); //run the dialogue
+                    PlayerStatus.instance.isDialogue = true;
+                    PlayerStatus.instance.loopDialogueB = false;
+                }
             }
 
             else if (PlayerStatus.instance.acceptDollQuest == true && !PlayerStatus.instance.checkItem(itemDoll))

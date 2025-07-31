@@ -17,8 +17,11 @@ public class SceneController : MonoBehaviour
     IEnumerator LoadScene()
     {
         transitionAnim.SetTrigger("Drop");
+        PlayerPrefs.SetInt("RetryBefore", 1);
+        Debug.Log("smg");
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(sceneName);
+        
         //transitionAnim.SetTrigger("Start");
     }
 }
