@@ -90,7 +90,7 @@ public class steakQuest : MonoBehaviour
                     dialogue1.StartDialogue(); //run the dialogue
                     PlayerStatus.instance.isDialogue = true;
                 }
-                if (PlayerStatus.instance.acceptColinQuest == false)
+                if (PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false)
                 {
                     PlayerStatus.instance.acceptSteakQuest = true;
                     Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest10);

@@ -187,7 +187,7 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetInt("Ending4", 0);
         PlayerPrefs.SetInt("Ending5", 0);
         PlayerPrefs.SetInt("Ending6", 0);
-        PlayerPrefs.SetInt("Ending7", 0);bagUI       
+        PlayerPrefs.SetInt("Ending7", 0);
         PlayerPrefs.SetInt("Ending8", 0);
         PlayerPrefs.SetInt("Ending9", 0);
         PlayerPrefs.SetInt("Ending10",0);

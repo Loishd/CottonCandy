@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        if (PlayerStatus.instance.isDialogue == false && PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.sketchFlowerSuccessfully == false)
+        if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.sketchFlowerSuccessfully == false)
         {
             PlayerPrefs.SetInt("Ending10", 1);
             StartCoroutine(AFKEndingInDelay());

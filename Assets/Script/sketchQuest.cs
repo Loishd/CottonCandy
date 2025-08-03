@@ -40,12 +40,13 @@ public class sketchQuest : MonoBehaviour
 
                 else if (PlayerStatus.instance.itembag.Count == 0)
                 {
-                    if (PlayerStatus.instance.pickupitemstatus == false)
+                    if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false)
                     {
                         PlayerStatus.instance.addItem(item);
                         PlayerStatus.instance.pickupitemstatus = true;
                         Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest12);
                     }
+
                     if (PlayerStatus.instance.checkItem(item))
                     {
                         if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
