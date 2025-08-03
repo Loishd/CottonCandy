@@ -42,6 +42,7 @@ public class SaveEnding : MonoBehaviour
 
     void Update()
     {
+        
         if (PlayerPrefs.GetInt("Ending1") == 0)
         {
             axeBadge.color = new Color(0.5f, 0.5f, 0.5f, 1f);

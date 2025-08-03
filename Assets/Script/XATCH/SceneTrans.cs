@@ -18,7 +18,7 @@ public class SceneController : MonoBehaviour
     {
         transitionAnim.SetTrigger("Drop");
         PlayerPrefs.SetInt("RetryBefore", 1);
-        Debug.Log("smg");
+        //Debug.Log("smg");
         yield return new WaitForSeconds(1);
         SceneManager.LoadSceneAsync(sceneName);
         
