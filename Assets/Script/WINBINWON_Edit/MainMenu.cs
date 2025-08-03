@@ -19,6 +19,9 @@ public class MainMenu : MonoBehaviour
     public GameObject Trasition;
     public GameObject PausedScreen;
     public GameObject GalleryScreen;
+    public Boolean GalleryPinEnding1, GalleryPinEnding2, GalleryPinEnding3 , GalleryPinEnding4 , GalleryPinEnding5, GalleryPinEnding6, GalleryPinEnding7, GalleryPinEnding8, GalleryPinEnding9, GalleryPinEnding10;
+    
+    
     private void Awake()
     {
 
@@ -38,12 +41,117 @@ public class MainMenu : MonoBehaviour
         Play();
         LoadVolume();
         /*MusicManager.Instance.PlayMusic("MusicSource");*/
- }
-    
+        PlayerPrefs.SetInt("Ending1", 1);
+    }
+
     private void Update()
     {
 
+        Badge_Checked();
+        
     }
+    public void Badge_Checked()
+    {
+        
+            if (PlayerPrefs.GetInt("Ending1") == 0)
+            {
+                GalleryPinEnding1 = false;
+           
+            }
+            else
+            {
+                GalleryPinEnding1 = true;
+            }
+            if (PlayerPrefs.GetInt("Ending2") == 0)
+            {
+                GalleryPinEnding2 = false;
+            
+            }
+            else
+            {
+                GalleryPinEnding2 = true;
+            
+            }
+            if (PlayerPrefs.GetInt("Ending3") == 0)
+            {
+                GalleryPinEnding3 = false;
+          
+            }
+            else
+            {
+                GalleryPinEnding3 = true;
+
+
+            }
+
+            if (PlayerPrefs.GetInt("Ending4") == 0)
+            {
+                GalleryPinEnding4 = false;
+         
+            }
+            else
+            {
+                GalleryPinEnding4 = true;
+       
+            }
+
+            if (PlayerPrefs.GetInt("Ending5") == 0)
+            {
+                GalleryPinEnding5 = false;
+        
+            }
+            else
+            {
+                GalleryPinEnding5 = true;
+          
+            }
+
+            if (PlayerPrefs.GetInt("Ending6") == 0)
+            {
+                GalleryPinEnding6 = false;
+         
+            }
+            else
+            {
+                GalleryPinEnding6 = true;
+            }
+
+            if (PlayerPrefs.GetInt("Ending7") == 0)
+            {
+                GalleryPinEnding7 = false;
+            }
+            else
+            {
+                GalleryPinEnding7 = true;
+            }
+            if (PlayerPrefs.GetInt("Ending8") == 0)
+            {
+                GalleryPinEnding8= false;
+            }
+            else
+            {
+                GalleryPinEnding8 = true;
+            }
+
+            if (PlayerPrefs.GetInt("Ending9") == 0)
+            {
+                 GalleryPinEnding9 = false;
+            }
+            else
+            {
+                GalleryPinEnding9 = true;
+            }
+            if (PlayerPrefs.GetInt("Ending10") == 0)
+            {
+                GalleryPinEnding10 = false;
+            }
+            else
+            {
+                GalleryPinEnding10 = true;
+            }
+       
+        }
+    
     public void CutScene_FadeIn()
     {
         fadeInDirector.Play();
@@ -55,10 +163,11 @@ public class MainMenu : MonoBehaviour
     public void Test()
     {
         SoundManager.Instance.PlaySound2D("SFX01");
+        PlayerPrefs.SetInt("Ending4", 1);
     }
     public void OpenMusicButton()
     {
-        
+
     }
     public void Play()
     {/*
@@ -163,21 +272,21 @@ public class MainMenu : MonoBehaviour
     {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-    } 
+    }
     public void CutScene()
     {
         StartCoroutine(delayScene00());
-        
+
     }
     public void Scene_MainMenu()
     {
         StartCoroutine(delayScene01());
-        
+
     }
     public void LoadScene()
     {
         StartCoroutine(StartScene101());
-        
+
     }
     IEnumerator StartScene101()
     {
@@ -189,7 +298,7 @@ public class MainMenu : MonoBehaviour
     IEnumerator delayScene00()
     {
         CutScene_FadeIn();
-        yield return new WaitForSeconds(2); 
+        yield return new WaitForSeconds(2);
         SceneManager.LoadSceneAsync(2);
         yield return new WaitForSeconds(2);
         Trasition.SetActive(false);
@@ -211,44 +320,100 @@ public class MainMenu : MonoBehaviour
         Trasition.SetActive(false);
     }
 
-    public void AxeEndingScene()
+    public void Badge_LoveBugEnding()
     {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(AxeEndingInDelay());
+        if (GalleryPinEnding6 == true)
+        {
+            StartCoroutine(LoveBugEndingInDelay());
+        }
+        
+    }//1 LadyBug
 
-    }
-    public void FlowerStudent()
+    public void Badge_PodcastEnding()
     {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(FlowerStudentInDelay());
-    }
-    public void FoodEnding()
+        if(GalleryPinEnding2 == true)
+        {
+            StartCoroutine(PodcastEndingInDelay());
+        }
+        
+    }//2 Podcast
+    public void Badge_AFKEnding()
     {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(FoodEndingInDelay());
-    }
-    public void sewkitStudent()
-    {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(sewkitStudentInDelay());
-    }
-    public void dollEnding()
-    {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(dollEndingInDelay());
-    }
-    public void sketchNotepadEnding()
-    {
-        GalleryScreen.gameObject.SetActive(false);
-        StartCoroutine(sketchNotepadEndingInDelay());
-    }
-    public void AFKEnding()
-    {
-        StartCoroutine(sketchNotepadEndingInDelay());
+        if (GalleryPinEnding10 == true)
+        {
+            StartCoroutine(AFKEndingInDelay());
+        }
+    }//3 AFK
 
+    public void Badge_AxeEndingScene()
+    {
+
+        if (GalleryPinEnding1 == true)
+        {
+            StartCoroutine(AxeEndingInDelay());
+        }
+        
+        
+    }//4 Axe
+    public void Badge_FlowerStudent()
+    {
+        if (GalleryPinEnding5 == true)
+        {
+            StartCoroutine(FlowerStudentInDelay());
+        }
+
+        
+    }//5 Flower
+    public void Badge_FoodEnding()
+    {
+
+        if (GalleryPinEnding9 == true)
+        {
+    StartCoroutine(FoodEndingInDelay());
+        }
+       
+    }//6 Lunch
+    public void Badge_SewkitStudent()
+    {
+        if (GalleryPinEnding4 == true)
+        {
+            StartCoroutine(SewkitStudentInDelay());
+        }
+
+        
+    }//7 Sew
+    public void Badge_DollEnding()
+    {
+        if (GalleryPinEnding3 == true)
+        {
+            StartCoroutine(DollEndingInDelay());
+        }
+
+        
+    }//8 Doll
+    public void Badge_SketchNotepadEnding()
+    {
+        if (GalleryPinEnding8 == true)
+        {
+            StartCoroutine(SketchNotepadEndingInDelay());
+        }
+        
+    }//9 NotePad
+
+    public void Badge_PadlockEnding()
+    {
+        if (GalleryPinEnding7 == true)
+        {
+            StartCoroutine(PadlockEndingInDelay());
+        }
+        
+    }//10
+    IEnumerator PadlockEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PadlockEnding");
     }
-
-
     IEnumerator AxeEndingInDelay()
     {
         MainMenu.instance.CutScene_FadeIn();
@@ -268,7 +433,7 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LunchEnding");
 
     }
-    IEnumerator sewkitStudentInDelay()
+    IEnumerator SewkitStudentInDelay()
     {
 
         MainMenu.instance.CutScene_FadeIn();
@@ -276,14 +441,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("SewEnding");
 
     }
-    IEnumerator dollEndingInDelay()
+    IEnumerator DollEndingInDelay()
     {
         MainMenu.instance.CutScene_FadeIn();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("DollEnding");
     }
 
-    IEnumerator sketchNotepadEndingInDelay()
+    IEnumerator SketchNotepadEndingInDelay()
     {
         MainMenu.instance.CutScene_FadeIn();
         yield return new WaitForSeconds(2);
@@ -297,5 +462,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("AFKEnding");
 
     }
+
+    IEnumerator PodcastEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("PodcastEnding");
+    }
+    IEnumerator LoveBugEndingInDelay()
+    {
+        MainMenu.instance.CutScene_FadeIn();
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("LoveBugEnding");
+    }
+
 
 }
