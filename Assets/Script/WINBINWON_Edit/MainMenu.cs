@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
         Play();
         LoadVolume();
         /*MusicManager.Instance.PlayMusic("MusicSource");*/
-        PlayerPrefs.SetInt("Ending1", 1);
+        
     }
 
     private void Update()
@@ -164,6 +164,33 @@ public class MainMenu : MonoBehaviour
     {
         SoundManager.Instance.PlaySound2D("SFX01");
         PlayerPrefs.SetInt("Ending4", 1);
+    }
+    public void AllPinOn()
+    {
+        PlayerPrefs.SetInt("Ending1", 1);
+        PlayerPrefs.SetInt("Ending2", 1);
+        PlayerPrefs.SetInt("Ending3", 1);
+        PlayerPrefs.SetInt("Ending4", 1);
+        PlayerPrefs.SetInt("Ending5", 1);
+        PlayerPrefs.SetInt("Ending6", 1);
+        PlayerPrefs.SetInt("Ending7", 1);
+        PlayerPrefs.SetInt("Ending8", 1);
+        PlayerPrefs.SetInt("Ending9", 1);
+        PlayerPrefs.SetInt("Ending10", 1);
+    }
+
+    public void AllPinOff()
+    {
+        PlayerPrefs.SetInt("Ending1", 0);
+        PlayerPrefs.SetInt("Ending2", 0);
+        PlayerPrefs.SetInt("Ending3", 0);
+        PlayerPrefs.SetInt("Ending4", 0);
+        PlayerPrefs.SetInt("Ending5", 0);
+        PlayerPrefs.SetInt("Ending6", 0);
+        PlayerPrefs.SetInt("Ending7", 0);
+        PlayerPrefs.SetInt("Ending8", 0);
+        PlayerPrefs.SetInt("Ending9", 0);
+        PlayerPrefs.SetInt("Ending10", 0);
     }
     public void OpenMusicButton()
     {
