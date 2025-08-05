@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
 
     public AudioSource background;
-    public float timer = 180f;
+    public float timer = 120f;
 
 
     private static GameManager _instance;
@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     IEnumerator CountdownCoroutine(float time)
     {
         yield return new WaitForSeconds(time);
+        if ()
 
         if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.sketchFlowerSuccessfully == false)
         {

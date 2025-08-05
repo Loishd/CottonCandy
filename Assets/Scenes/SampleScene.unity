@@ -37270,7 +37270,7 @@ MonoBehaviour:
   MusicSource: {fileID: 0}
   SFXSource: {fileID: 0}
   background: {fileID: 0}
-  timer: 450
+  timer: 120
   _pausedScreen: {fileID: 0}
 --- !u!4 &1353955210
 Transform:
