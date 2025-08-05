@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
 
     public AudioSource background;
-    public float timer = 450f;
+    public float timer = 180f;
 
 
     private static GameManager _instance;
