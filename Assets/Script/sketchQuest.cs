@@ -40,7 +40,7 @@ public class sketchQuest : MonoBehaviour
 
                 else if (PlayerStatus.instance.itembag.Count == 0)
                 {
-                    if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false)
+                    if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.foundSpeaker == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false)
                     {
                         PlayerStatus.instance.addItem(item);
                         PlayerStatus.instance.pickupitemstatus = true;

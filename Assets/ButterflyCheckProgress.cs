@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Objectives;
 
 public class ButterflyCheckProgress : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class ButterflyCheckProgress : MonoBehaviour
             }
 
             
-            else if (PlayerStatus.instance.acceptDollQuest == true && !PlayerStatus.instance.checkItem(itemDoll))
+            else if (Objectives.instance.cq == CurrentQuest.Quest5 && (PlayerStatus.instance.acceptDollQuest == true && !PlayerStatus.instance.checkItem(itemDoll)))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -70,7 +71,7 @@ public class ButterflyCheckProgress : MonoBehaviour
                     PlayerStatus.instance.isDialogue = true;
                 }
             }
-            else if (PlayerStatus.instance.checkItem(itemDoll))
+            else if (Objectives.instance.cq == CurrentQuest.Quest7 && (PlayerStatus.instance.checkItem(itemDoll)))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -81,7 +82,7 @@ public class ButterflyCheckProgress : MonoBehaviour
                 }
             }
 
-            else if (PlayerStatus.instance.checkItem(itemAxe))
+            else if (Objectives.instance.cq == CurrentQuest.Quest1 && (PlayerStatus.instance.checkItem(itemAxe)))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -92,7 +93,7 @@ public class ButterflyCheckProgress : MonoBehaviour
                 }
             }
 
-            else if (PlayerStatus.instance.foundSpeaker == true && PlayerStatus.instance.acceptColinQuest == false)
+            else if (Objectives.instance.cq == CurrentQuest.Quest7 && (PlayerStatus.instance.foundSpeaker == true && PlayerStatus.instance.acceptColinQuest == false))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -103,7 +104,7 @@ public class ButterflyCheckProgress : MonoBehaviour
                 }
             }
 
-            else if (PlayerStatus.instance.acceptColinQuest == true && PlayerStatus.instance.colinQuestsuccessfully == false)
+            else if (Objectives.instance.cq == CurrentQuest.Quest3 && (PlayerStatus.instance.acceptColinQuest == true && PlayerStatus.instance.colinQuestsuccessfully == false))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -114,13 +115,36 @@ public class ButterflyCheckProgress : MonoBehaviour
                 }
             }
 
-            else if (PlayerStatus.instance.colinQuestsuccessfully == true)
+            else if (Objectives.instance.cq == CurrentQuest.Quest4 && (PlayerStatus.instance.colinQuestsuccessfully == true))
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
                     dialogue7.textComponent.text = string.Empty; //reset dialogue
                     NPCPanel7.SetActive(true); //show dialogue
                     dialogue7.StartDialogue(); //run the dialogue
+                    PlayerStatus.instance.isDialogue = true;
+                }
+            }
+
+            
+            else if (Objectives.instance.cq == CurrentQuest.Quest12 && (PlayerStatus.instance.checkItem(itemNotebook)))
+            {
+                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                {
+                    dialogue9.textComponent.text = string.Empty; //reset dialogue
+                    NPCPanel9.SetActive(true); //show dialogue
+                    dialogue9.StartDialogue(); //run the dialogue
+                    PlayerStatus.instance.isDialogue = true;
+                }
+            }
+
+            else if (Objectives.instance.cq == CurrentQuest.Quest14 && (PlayerStatus.instance.checkItem(itemFish)))
+            {
+                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
+                {
+                    dialogue10.textComponent.text = string.Empty; //reset dialogue
+                    NPCPanel10.SetActive(true); //show dialogue
+                    dialogue10.StartDialogue(); //run the dialogue
                     PlayerStatus.instance.isDialogue = true;
                 }
             }
@@ -136,39 +160,6 @@ public class ButterflyCheckProgress : MonoBehaviour
                 }
             }
 
-            else if (PlayerStatus.instance.checkItem(itemNotebook))
-            {
-                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
-                {
-                    dialogue9.textComponent.text = string.Empty; //reset dialogue
-                    NPCPanel9.SetActive(true); //show dialogue
-                    dialogue9.StartDialogue(); //run the dialogue
-                    PlayerStatus.instance.isDialogue = true;
-                }
-            }
-
-            else if (PlayerStatus.instance.checkItem(itemNotebook))
-            {
-                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
-                {
-                    dialogue9.textComponent.text = string.Empty; //reset dialogue
-                    NPCPanel9.SetActive(true); //show dialogue
-                    dialogue9.StartDialogue(); //run the dialogue
-                    PlayerStatus.instance.isDialogue = true;
-                }
-            }
-
-            else if (PlayerStatus.instance.checkItem(itemFish))
-            {
-                if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
-                {
-                    dialogue10.textComponent.text = string.Empty; //reset dialogue
-                    NPCPanel10.SetActive(true); //show dialogue
-                    dialogue10.StartDialogue(); //run the dialogue
-                    PlayerStatus.instance.isDialogue = true;
-                }
-            }
-
             else if (PlayerStatus.instance.loopDialogueB == true)
             {
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
@@ -180,7 +171,6 @@ public class ButterflyCheckProgress : MonoBehaviour
                     PlayerStatus.instance.loopDialogueB = false;
                 }
             }
-
 
             else
             {

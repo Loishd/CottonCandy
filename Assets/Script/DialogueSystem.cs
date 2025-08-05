@@ -16,7 +16,6 @@ public struct DialogueResources
     public string text;
     public int soundNumber;
 
-    //characterImage.sprite = lines[index].imagesprite;
 };
 
 public class DialogueSystem : MonoBehaviour

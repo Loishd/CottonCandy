@@ -46,7 +46,7 @@ public class steakQuest : MonoBehaviour
 
             else if (PlayerStatus.instance.itembag.Count == 1)
             {
-                if (PlayerStatus.instance.checkItem(requireItem) && PlayerStatus.instance.acceptSteakQuest == true && PlayerStatus.instance.acceptColinQuest == false)
+                if (PlayerStatus.instance.checkItem(requireItem) && PlayerStatus.instance.acceptSteakQuest == true && PlayerStatus.instance.foundSpeaker == false)
                 {
                     PlayerStatus.instance.itembag.RemoveAt(0);
                     PlayerStatus.instance.steakQuestSuccessfully = true;
@@ -69,6 +69,7 @@ public class steakQuest : MonoBehaviour
                 PlayerStatus.instance.itembag.RemoveAt(0);
                 Debug.Log("Give Steak a fish for free");
                 PlayerStatus.instance.pickupitemstatus = false;
+                Objectives.instance.SetQuest(Objectives.CurrentQuest.NoActiveQuest);
 
                 if (PlayerStatus.instance.isDialogue == false) //player cannot re-open the dialogue while dialogue-ing
                 {
@@ -90,7 +91,7 @@ public class steakQuest : MonoBehaviour
                     dialogue1.StartDialogue(); //run the dialogue
                     PlayerStatus.instance.isDialogue = true;
                 }
-                if (PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false)
+                if (PlayerStatus.instance.foundSpeaker == false && PlayerStatus.instance.acceptDollQuest == false)
                 {
                     PlayerStatus.instance.acceptSteakQuest = true;
                     Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest10);

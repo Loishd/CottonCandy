@@ -45,6 +45,7 @@ public class fishInteraction : MonoBehaviour
                     FishJumpScare01();
                     PlayerStatus.instance.addItem(itf);
                     itemPicker.pickupitemstatus = true;
+                    Objectives.instance.SetQuest(Objectives.CurrentQuest.Quest14);
                 }
             }
         }
