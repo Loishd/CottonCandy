@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Cutscenes/Endings/SewEnding.unity
     guid: 0153550fe17392d4e8c5d9f358e6d7b6
   - enabled: 1
-    path: Assets/Cutscenes/Endings/FlowerEnding.unity
+    path: Assets/Cutscenes/Endings/Flower.unity
     guid: b969fc5e665ffc74d9e4d93976376d7a
   - enabled: 1
     path: Assets/Cutscenes/Endings/LoveBugEnding.unity

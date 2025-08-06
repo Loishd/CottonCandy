@@ -163,7 +163,7 @@ public class MainMenu : MonoBehaviour
     public void Test()
     {
         SoundManager.Instance.PlaySound2D("SFX01");
-        PlayerPrefs.SetInt("Ending4", 1);
+        
     }
     public void AllPinOn()
     {
@@ -315,6 +315,15 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(StartScene101());
 
     }
+
+    public void LoadIntroScene()
+    {
+        if (TabBoolean == false)
+        {
+            StartCoroutine(StartScene101());
+        }
+    }
+
     IEnumerator StartScene101()
     {
         MainMenu.instance.CutScene_FadeIn();

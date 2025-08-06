@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
     IEnumerator CountdownCoroutine(float time)
     {
         yield return new WaitForSeconds(time);
-        if ()
+        
 
         if (PlayerStatus.instance.pickupitemstatus == false && PlayerStatus.instance.acceptColinQuest == false && PlayerStatus.instance.acceptDollQuest == false && PlayerStatus.instance.acceptSteakQuest == false && PlayerStatus.instance.sketchFlowerSuccessfully == false)
         {

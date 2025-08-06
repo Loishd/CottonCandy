@@ -5776,7 +5776,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1423853036}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadIntroScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
